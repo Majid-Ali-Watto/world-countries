@@ -6,11 +6,16 @@ function App() {
 	const [countries, setCountries] = useState([]);
 	const [searchQuery, setSearchQuery] = useState("");
 
+	function SortByName(a, b) {
+		if (a.name.common.toLowerCase() > b.name.common.toLowerCase()) return 1;
+		else if (a.name.common.toLowerCase() < b.name.common.toLowerCase()) return -1;
+		else return 0;
+	}
 	async function fetchCountriesData() {
 		try {
 			const response = await axios.get("https://restcountries.com/v3.1/all");
 			console.log(response.data);
-			setCountries(response.data);
+			setCountries(response.data.sort(SortByName));
 		} catch (error) {
 			console.log(error);
 		}
