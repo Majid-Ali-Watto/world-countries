@@ -103,6 +103,7 @@ section {
   border-radius: 4px;
   margin-bottom: 15px;
   object-fit: cover;
+  aspect-ratio: 16/9;
 }
 
 .card .flag {
