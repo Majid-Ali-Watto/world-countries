@@ -2,37 +2,60 @@ import { Suspense, useEffect, useState } from "react";
 import "./CountryCard.css"; // Separate styling file
 import axios from "axios";
 import Loading from "./Loader";
-import { useLocation } from "react-router-dom";
-
+import { useLocation, useNavigate } from "react-router-dom";
+import { formatPopulation } from "../utils/format-population";
 function CountryCard() {
 	const [countries, setCountries] = useState([]);
-	const location = useLocation();
-	const data = location.state;
+	const [borders, setBorders] = useState([]);
+	const [bordersNames, setBordersNames] = useState([]);
 
+	const location = useLocation();
+	const navigate = useNavigate();
+	const data = location.state;
 	useEffect(() => {
 		sessionStorage.setItem("flag", JSON.stringify(true));
-
+		window.scrollTo(0, 0);
 		async function fetchCountriesData() {
 			try {
-				const response = await axios.get(`https://restcountries.com/v3.1/alpha?codes=${data}`);
+				const response = await axios.get(`/alpha?codes=${data}`);
 				setCountries(response.data);
+				console.log(response.data);
+				setBorders(response.data[0].borders);
 			} catch (error) {
 				console.log(error);
 			}
 		}
 		fetchCountriesData();
 	}, [data]);
-
-	const formatPopulation = (population) => {
-		if (!population) return "N/A";
-		if (population >= 1_000_000_000) {
-			return (population / 1_000_000_000).toFixed(2) + " billion";
-		} else if (population >= 1_000_000) {
-			return (population / 1_000_000).toFixed(2) + " million";
-		} else {
-			return population.toLocaleString(); // For numbers less than a million
+	useEffect(() => {
+		return () => {
+			setTimeout(() => {
+				const element = document.getElementById(data);
+				if (element) {
+					element.scrollIntoView({
+						behavior: "instant", // Optional: smooth scrolling
+						block: "center" // Optional: alignment control
+					});
+				}
+			}, 0);
+		};
+	}, [data]);
+	useEffect(() => {
+		async function getCountriesNames() {
+			const countries = [];
+			for (let index = 0; index < borders?.length; index++) {
+				const country = borders[index];
+				try {
+					const response = await axios.get(`/alpha?codes=${country}&fields=name`);
+					countries.push(response.data[0].name.common);
+				} catch (error) {
+					console.log(error);
+				}
+			}
+			setBordersNames([...countries]);
 		}
-	};
+		getCountriesNames();
+	}, [borders]);
 
 	return (
 		<Suspense fallback={<Loading />}>
@@ -79,6 +102,12 @@ function CountryCard() {
 									</tr>
 									<tr>
 										<td>
+											<strong>Calling Code:</strong>
+										</td>
+										<td>{country?.idd?.root + country.idd.suffixes?.slice(0, 1).join("") || "N/A"}</td>
+									</tr>
+									<tr>
+										<td>
 											<strong>Capital:</strong>
 										</td>
 										<td>{country.capital?.join(", ") || "N/A"}</td>
@@ -121,6 +150,34 @@ function CountryCard() {
 									</tr>
 									<tr>
 										<td>
+											<strong>Land Locked:</strong>
+										</td>
+										<td>{country.landlocked ? "Yes" : "No"}</td>
+									</tr>
+									<tr>
+										<td>
+											<strong>Independent:</strong>
+										</td>
+										<td>{country.independent ? "Yes" : "No"}</td>
+									</tr>
+
+									<tr>
+										<td>
+											<strong>Driving Side:</strong>
+										</td>
+										<td>{country.car.side}</td>
+									</tr>
+									<tr>
+										<td>
+											<strong>Gini Index:</strong>
+										</td>
+										<td>
+											{Object?.keys(country?.gini || {})?.map((key) => country.gini?.[key])} %<li>0 represents perfect equality</li>
+											<li>100 represents perfect inequality.</li>
+										</td>
+									</tr>
+									<tr>
+										<td>
 											<strong>Time Zones:</strong>
 										</td>
 										<td>{country.timezones?.join(", ")}</td>
@@ -155,14 +212,14 @@ function CountryCard() {
 										<td>
 											<strong>Borders:</strong>
 										</td>
-										<td>{country.borders?.join(", ") || "None"}</td>
+										<td>{bordersNames?.join(", ") || "None"}</td>
 									</tr>
 									<tr>
 										<td>
 											<strong>Area:</strong>
 										</td>
 										<td>
-											{country.area} KM<sup>2</sup>
+											{country.area?.toLocaleString()} KM<sup>2</sup>
 										</td>
 									</tr>
 									<tr>
@@ -186,6 +243,8 @@ function CountryCard() {
 									</tr>
 								</tbody>
 							</table>
+							<br />
+							<button onClick={() => navigate("/")}>Back</button>
 						</div>
 					))
 				) : (

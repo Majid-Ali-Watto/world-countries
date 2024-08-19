@@ -1,10 +1,10 @@
 import { Suspense, useEffect, useState, useMemo, useCallback, memo } from "react";
 import "./App.css";
 import axios from "axios";
-import Loading from "./Loader";
+import Loading from "./components/Loader";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
-
+import { formatPopulation } from "./utils/format-population";
 const App = memo(({ cache }) => {
 	const [countries, setCountries] = useState([]);
 	const [searchQuery, setSearchQuery] = useState("");
@@ -18,20 +18,29 @@ const App = memo(({ cache }) => {
 		async function fetchCountriesData() {
 			if (cache.countries.length > 0) {
 				setCountries(cache.countries);
-				return;
+				return false;
 			}
 			try {
-				console.log("Fetching countries");
-				const response = await axios.get("https://restcountries.com/v3.1/all?fields=name,capital,continents,flags,population,ccn3");
+				const response = await axios.get("/all?fields=name,capital,continents,flags,population,ccn3");
 				const sortedCountries = response.data.sort(SortByName);
 				cache.countries = sortedCountries; // Avoid direct mutation; ensure fresh reference if necessary
 				setCountries(sortedCountries);
+				return true;
 			} catch (error) {
-				console.log(error);
+				throw new Error(error);
 			}
 		}
 
-		fetchCountriesData();
+		fetchCountriesData()
+			.then((res) => {
+				console.log(res);
+				setTimeout(() => {
+					if (res) window.scrollTo(0, 0);
+				}, 100);
+			})
+			.catch((error) => {
+				console.log(error);
+			});
 	}, [cache, SortByName]);
 
 	const filteredCountries = useMemo(
@@ -43,24 +52,13 @@ const App = memo(({ cache }) => {
 		[countries, searchQuery]
 	);
 
-	const formatPopulation = (population) => {
-		if (!population) return "N/A";
-		if (population >= 1_000_000_000) {
-			return (population / 1_000_000_000).toFixed(2) + " billion";
-		} else if (population >= 1_000_000) {
-			return (population / 1_000_000).toFixed(2) + " million";
-		} else {
-			return population.toLocaleString();
-		}
-	};
-
 	return (
 		<>
 			<section>
 				<h2>World Countries</h2>
 				<div className="search-container">
 					<input
-						type="text"
+						type="search"
 						placeholder="Search for a country..."
 						value={searchQuery}
 						onChange={(e) => setSearchQuery(e.target.value)}
@@ -73,6 +71,7 @@ const App = memo(({ cache }) => {
 					{filteredCountries.length > 0 ? (
 						filteredCountries.map((country, index) => (
 							<div
+								id={country.ccn3}
 								key={country.name.common}
 								className="card">
 								<h2>
@@ -94,7 +93,7 @@ const App = memo(({ cache }) => {
 									<strong>Population:</strong> {formatPopulation(country.population)}
 								</p>
 								<p>
-									<strong>All Data:</strong>
+									{/* <strong>All Data:</strong> */}
 									<a onClick={() => navigate("/country", { state: country.ccn3 })}>View All Data</a>
 								</p>
 							</div>

@@ -2,7 +2,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
+  background-color: black;
   margin: 0;
   padding: 20px;
   display: flex;
@@ -11,9 +12,11 @@ body {
 
 h2 {
   text-align: center;
-  color: #333;
+  /* color: #333; */
+  color: #fff;
   margin-bottom: 20px;
 }
+
 /* Other existing styles */
 
 section {
@@ -21,41 +24,31 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
-  /* Background color to ensure readability */
+  background-color: black;
   padding-bottom: 10px;
-  /* Padding for spacing */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Optional shadow for visual separation */
   z-index: 1000;
-  /* Ensures it's above other content */
   box-sizing: border-box;
-  /* Includes padding and border in element's total width and height */
 }
 
 .search-container {
-  display:flex;
+  display: flex;
   justify-content: center;
-  /* margin-top: 60px; */
-  /* Space for the heading */
   width: 100%;
-  /* Ensure container takes full width */
   box-sizing: border-box;
-  /* Includes padding and border in element's total width and height */
 }
 
 .search-bar {
   width: 100%;
-  /* Make the search bar take full width of its container */
   max-width: 600px;
-  /* Optional: Set a max-width for larger screens */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  /* Includes padding and border in element's total width and height */
+  background-color: #333;
+  color: #ddd;
   margin: 0 auto;
-  /* Center the search bar in its container */
+  font-weight: 700;
 }
 
 
@@ -63,6 +56,16 @@ section {
 @media (max-width: 768px) {
   .search-bar {
     padding: 8px;
+    margin-inline: 10px;
+
+    /* Adjust padding for smaller screens */
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 660px) {
+  .search-bar {
+    max-width: 300px;
     /* Adjust padding for smaller screens */
   }
 }
@@ -70,6 +73,7 @@ section {
 @media (max-width: 480px) {
   .search-bar {
     padding: 6px;
+    max-width: 300px;
     /* Further adjust padding for very small screens */
   }
 }
@@ -83,7 +87,8 @@ section {
 }
 
 .card {
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #333;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -112,12 +117,12 @@ section {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.card .coat-of-arms {
+/* .card .coat-of-arms {
   max-width: 80px;
   max-height: 80px;
   margin: 0 auto 15px auto;
   display: block;
-}
+} */
 
 .card h2 {
   font-size: 18px;
@@ -127,17 +132,7 @@ section {
 
 .card p {
   font-size: 14px;
-  color: #555;
+  /* color: #555; */
+  color: #fff;
   margin: 5px 0;
-}
-
-a {
-  color: #007BFF;
-  text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-a:hover {
-  text-decoration: underline;
 }
