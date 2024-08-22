@@ -57,7 +57,7 @@ const App = memo(({ cache }) => {
 	return (
 		<>
 			<section>
-				<h2>World Countries</h2>
+				<h2>World Atlas: Explore Countries, States, Cities, and Population Insights</h2>
 				<div className="search-container">
 					<input
 						tabIndex={1}

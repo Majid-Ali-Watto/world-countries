@@ -1,8 +1,14 @@
-# React + Vite
+# World Atlas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+World Atlas is a comprehensive web application designed to provide detailed insights into countries, states, cities, and population data worldwide. The application allows users to explore demographic trends, geographic information, and various statistics about different regions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Country Information**: Access detailed information about countries, including states and cities.
+- **State Data**: View state-level data, including population counts and city details.
+- **City Insights**: Discover cities within states and explore their information.
+- **Population Trends**: Analyze historical population data for countries.
+
+
