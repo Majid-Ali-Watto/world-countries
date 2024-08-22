@@ -1,15 +1,14 @@
-import { Suspense, useEffect, useState, useMemo, useCallback, memo } from "react";
-import "./App.css";
+import { useEffect, useState, useMemo, useCallback, memo } from "react";
 import axios from "axios";
-import Loading from "./components/Loader";
+
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import { formatPopulation } from "./utils/format-population";
+import { Loader } from "./components/Loader";
 const App = memo(({ cache }) => {
 	const [countries, setCountries] = useState([]);
 	const [searchQuery, setSearchQuery] = useState("");
 	const navigate = useNavigate();
-
 	const SortByName = useCallback((a, b) => {
 		return a.name.common.toLowerCase().localeCompare(b.name.common.toLowerCase());
 	}, []);
@@ -30,17 +29,20 @@ const App = memo(({ cache }) => {
 				throw new Error(error);
 			}
 		}
-
-		fetchCountriesData()
-			.then((res) => {
-				console.log(res);
-				setTimeout(() => {
-					if (res) window.scrollTo(0, 0);
-				}, 100);
-			})
-			.catch((error) => {
-				console.log(error);
-			});
+		setTimeout(() => {
+			fetchCountriesData()
+				.then((res) => {
+					setTimeout(() => {
+						if (res) window.scrollTo(0, 0);
+					}, 100);
+				})
+				.catch((error) => {
+					console.log(error);
+				})
+				.finally(() => {
+					Loader.close();
+				});
+		}, 2000);
 	}, [cache, SortByName]);
 
 	const filteredCountries = useMemo(
@@ -58,6 +60,7 @@ const App = memo(({ cache }) => {
 				<h2>World Countries</h2>
 				<div className="search-container">
 					<input
+						tabIndex={1}
 						type="search"
 						placeholder="Search for a country..."
 						value={searchQuery}
@@ -66,17 +69,20 @@ const App = memo(({ cache }) => {
 					/>
 				</div>
 			</section>
-			<Suspense fallback={<Loading />}>
-				<div className="card-container">
-					{filteredCountries.length > 0 ? (
-						filteredCountries.map((country, index) => (
+			<div className="card-container">
+				{filteredCountries.length > 0
+					? filteredCountries.map((country, index) => (
 							<div
+								tabIndex={index + 2}
 								id={country.ccn3}
 								key={country.name.common}
 								className="card">
-								<h2>
-									{index + 1}. {country.name.common}
-								</h2>
+								<div>
+									<h2 id="country-name">
+										{index + 1}. {country.name.common}
+									</h2>
+								</div>
+
 								<img
 									src={country.flags.svg}
 									alt={country.flags.alt}
@@ -97,12 +103,9 @@ const App = memo(({ cache }) => {
 									<a onClick={() => navigate("/country", { state: country.ccn3 })}>View All Data</a>
 								</p>
 							</div>
-						))
-					) : (
-						<Loading />
-					)}
-				</div>
-			</Suspense>
+					  ))
+					: Loader.start()}
+			</div>
 		</>
 	);
 });

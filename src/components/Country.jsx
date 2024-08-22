@@ -1,14 +1,12 @@
-import { Suspense, useEffect, useState } from "react";
-import "./CountryCard.css"; // Separate styling file
+import { useEffect, useState } from "react";
 import axios from "axios";
-import Loading from "./Loader";
+import { Loader } from "./Loader";
 import { useLocation, useNavigate } from "react-router-dom";
 import { formatPopulation } from "../utils/format-population";
 function CountryCard() {
 	const [countries, setCountries] = useState([]);
 	const [borders, setBorders] = useState([]);
 	const [bordersNames, setBordersNames] = useState([]);
-
 	const location = useLocation();
 	const navigate = useNavigate();
 	const data = location.state;
@@ -20,6 +18,7 @@ function CountryCard() {
 				const response = await axios.get(`/alpha?codes=${data}`);
 				setCountries(response.data);
 				console.log(response.data);
+				Loader.close();
 				setBorders(response.data[0].borders);
 			} catch (error) {
 				console.log(error);
@@ -56,12 +55,70 @@ function CountryCard() {
 		}
 		getCountriesNames();
 	}, [borders]);
+	function getStates(countryName) {
+		Loader.start();
+		let data = JSON.stringify({
+			country: countryName
+		});
+
+		let config = {
+			method: "post",
+			maxBodyLength: Infinity,
+			url: "https://countriesnow.space/api/v0.1/countries/states",
+			headers: {
+				"Content-Type": "application/json"
+			},
+			data: data
+		};
+
+		axios
+			.request(config)
+			.then((response) => {
+				console.log(response.data);
+
+				navigate("/states", { state: { states: response.data, countryName } });
+			})
+			.catch((error) => {
+				console.log(error);
+			})
+			.finally(() => {
+				Loader.close();
+			});
+	}
+	function getPopoulation(countryName) {
+		Loader.start();
+		let data = JSON.stringify({
+			country: countryName
+		});
+
+		let config = {
+			method: "post",
+			maxBodyLength: Infinity,
+			url: "https://countriesnow.space/api/v0.1/countries/population",
+			headers: {
+				"Content-Type": "application/json"
+			},
+			data: data
+		};
+
+		axios
+			.request(config)
+			.then((response) => {
+				console.log(response.data);
+				navigate("/population", { state: { populations: response.data, countryName } });
+			})
+			.catch((error) => {
+				console.log(error);
+			})
+			.finally(() => {
+				Loader.close();
+			});
+	}
 
 	return (
-		<Suspense fallback={<Loading />}>
-			<div className="country-card-container">
-				{countries.length > 0 ? (
-					countries.map((country) => (
+		<div className="country-card-container">
+			{countries.length > 0
+				? countries.map((country) => (
 						<div
 							key={country.name.common}
 							className="country-card">
@@ -84,92 +141,92 @@ function CountryCard() {
 								<tbody>
 									<tr>
 										<td>
-											<strong>Official Name:</strong>
+											<strong>Official Name</strong>
 										</td>
 										<td>{country.name.official}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Short Name:</strong>
+											<strong>Short Name</strong>
 										</td>
 										<td>{country.fifa || "N/A"}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Internet Domain:</strong>
+											<strong>Internet Domain</strong>
 										</td>
 										<td>{country?.tld?.join(", ") || "N/A"}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Calling Code:</strong>
+											<strong>Calling Code</strong>
 										</td>
 										<td>{country?.idd?.root + country.idd.suffixes?.slice(0, 1).join("") || "N/A"}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Capital:</strong>
+											<strong>Capital</strong>
 										</td>
 										<td>{country.capital?.join(", ") || "N/A"}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Nationality:</strong>
+											<strong>Nationality</strong>
 										</td>
 										<td>{country?.demonyms?.eng?.f || "N/A"}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Languages:</strong>
+											<strong>Languages</strong>
 										</td>
 										<td>{Object.values(country.languages || {}).join(", ")}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Continents:</strong>
+											<strong>Continents</strong>
 										</td>
 										<td>{country.continents?.join(", ")}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Region:</strong>
+											<strong>Region</strong>
 										</td>
 										<td>{country.region}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Sub-Region:</strong>
+											<strong>Sub-Region</strong>
 										</td>
 										<td>{country.subregion}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>UN Member:</strong>
+											<strong>UN Member</strong>
 										</td>
 										<td>{country.unMember ? "Yes" : "No"}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Land Locked:</strong>
+											<strong>Land Locked</strong>
 										</td>
 										<td>{country.landlocked ? "Yes" : "No"}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Independent:</strong>
+											<strong>Independent</strong>
 										</td>
 										<td>{country.independent ? "Yes" : "No"}</td>
 									</tr>
 
 									<tr>
 										<td>
-											<strong>Driving Side:</strong>
+											<strong>Driving Side</strong>
 										</td>
 										<td>{country.car.side}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Gini Index:</strong>
+											<strong>Gini Index</strong>
 										</td>
 										<td>
 											{Object?.keys(country?.gini || {})?.map((key) => country.gini?.[key])} %<li>0 represents perfect equality</li>
@@ -178,25 +235,25 @@ function CountryCard() {
 									</tr>
 									<tr>
 										<td>
-											<strong>Time Zones:</strong>
+											<strong>Time Zones</strong>
 										</td>
 										<td>{country.timezones?.join(", ")}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Start of Week:</strong>
+											<strong>Start of Week</strong>
 										</td>
 										<td>{country.startOfWeek[0].toUpperCase() + country.startOfWeek.slice(1)}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Postal Code:</strong>
+											<strong>Postal Code</strong>
 										</td>
 										<td>{country?.postalCode?.format || "N/A"}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Currency:</strong>
+											<strong>Currency</strong>
 										</td>
 										<td>
 											{country?.currencies?.[Object.keys(country?.currencies || {})[0]]?.name} ({country?.currencies?.[Object.keys(country?.currencies || {})[0]]?.symbol})
@@ -204,19 +261,19 @@ function CountryCard() {
 									</tr>
 									<tr>
 										<td>
-											<strong>Currency Code:</strong>
+											<strong>Currency Code</strong>
 										</td>
 										<td>{country.ccn3}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Borders:</strong>
+											<strong>Borders</strong>
 										</td>
 										<td>{bordersNames?.join(", ") || "None"}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Area:</strong>
+											<strong>Area</strong>
 										</td>
 										<td>
 											{country.area?.toLocaleString()} KM<sup>2</sup>
@@ -224,13 +281,13 @@ function CountryCard() {
 									</tr>
 									<tr>
 										<td>
-											<strong>Population:</strong>
+											<strong>Population</strong>
 										</td>
 										<td>{formatPopulation(country.population)}</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Map:</strong>
+											<strong>Map</strong>
 										</td>
 										<td>
 											<a
@@ -244,14 +301,16 @@ function CountryCard() {
 								</tbody>
 							</table>
 							<br />
+							<p style={{ display: "flex", justifyContent: "space-evenly", flexWrap: "wrap" }}>
+								<a onClick={() => getStates(country.name.common)}>View {country.name.common}&apos;s states</a>
+								<a onClick={() => getPopoulation(country.name.common)}>View {country.name.common}&apos;s Population</a>
+							</p>
+							<br />
 							<button onClick={() => navigate("/")}>Back</button>
 						</div>
-					))
-				) : (
-					<Loading />
-				)}
-			</div>
-		</Suspense>
+				  ))
+				: Loader.start()}
+		</div>
 	);
 }
 
