@@ -11,7 +11,6 @@ function CountryStates() {
 	const abortControllerRef = useRef(null);
 
 	useEffect(() => {
-		// Cleanup function to abort any ongoing requests when the component unmounts
 		return () => {
 			if (abortControllerRef.current) {
 				abortControllerRef.current.abort();
@@ -20,14 +19,14 @@ function CountryStates() {
 	}, []);
 
 	function getCities(stateName) {
-		Loader.start();
 		if (cities[stateName] && cities[stateName].length > 0) return;
-		// Cancel the previous request before starting a new one
+
+		Loader.start();
+
 		if (abortControllerRef.current) {
 			abortControllerRef.current.abort();
 		}
 
-		// Create a new AbortController for the new request
 		abortControllerRef.current = new AbortController();
 		const signal = abortControllerRef.current.signal;
 
@@ -50,7 +49,6 @@ function CountryStates() {
 		axios
 			.request(config)
 			.then((response) => {
-				console.log(response.data);
 				setCities((prevCities) => ({
 					...prevCities,
 					[stateName]: response.data.data
@@ -60,44 +58,45 @@ function CountryStates() {
 				if (axios.isCancel(error)) {
 					console.error("Operation canceled");
 				} else {
-					console.log(error);
+					console.error("Error fetching cities:", error);
 				}
 			})
 			.finally(() => {
 				Loader.close();
 			});
 	}
+
+	if (states.data.states.length === 0) {
+		return <h2>No States Found</h2>;
+	}
+
 	return (
 		<div className="country-states-container">
-			{states.data.states.map((state) => {
-				return (
-					<details
-						key={state.state_code}
-						className="state-details">
-						<summary className="state-summary">
-							<span>{state.name}</span>
-							<span id="state-code">({state.state_code})</span>
-						</summary>
-						<a
-							className="view-cities-link"
-							onClick={() => getCities(state.name)}>
-							View Cities
-						</a>
-						<div className="cities-container">
-							{cities[state.name]?.map((city) => {
-								return (
-									<span
-										className="city-chip"
-										key={city}>
-										{city}
-									</span>
-								);
-							})}
-							{cities[state.name]?.length === 0 && <p>No Cities Found</p>}
-						</div>
-					</details>
-				);
-			})}
+			{states.data.states.map((state) => (
+				<details
+					key={state.state_code}
+					className="state-details">
+					<summary className="state-summary">
+						<span>{state.name}</span>
+						<span id="state-code">({state.state_code})</span>
+					</summary>
+					<a
+						className="view-cities-link"
+						onClick={() => getCities(state.name)}>
+						View Cities
+					</a>
+					<div className="cities-container">
+						{cities[state.name]?.map((city) => (
+							<span
+								className="city-chip"
+								key={city}>
+								{city}
+							</span>
+						))}
+						{cities[state.name]?.length === 0 && <p>No Cities Found</p>}
+					</div>
+				</details>
+			))}
 		</div>
 	);
 }

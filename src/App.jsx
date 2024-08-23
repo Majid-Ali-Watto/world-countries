@@ -5,59 +5,75 @@ import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import { formatPopulation } from "./utils/format-population";
 import { Loader } from "./components/Loader";
-const App = memo(({ cache }) => {
+
+// Move this outside of the App component
+const cache = { countries: [], state: "" };
+
+const App = memo(() => {
 	const [countries, setCountries] = useState([]);
 	const [searchQuery, setSearchQuery] = useState("");
 	const navigate = useNavigate();
-	const SortByName = useCallback((a, b) => {
+	// Memoize sorting function
+	const sortByName = useCallback((a, b) => {
 		return a.name.common.toLowerCase().localeCompare(b.name.common.toLowerCase());
 	}, []);
 
 	useEffect(() => {
+		sessionStorage.clear();
+
 		async function fetchCountriesData() {
 			if (cache.countries.length > 0) {
 				setCountries(cache.countries);
-				return false;
+				return;
 			}
 			try {
+				console.log("Fetching countries");
 				const response = await axios.get("/all?fields=name,capital,continents,flags,population,ccn3");
-				const sortedCountries = response.data.sort(SortByName);
-				cache.countries = sortedCountries; // Avoid direct mutation; ensure fresh reference if necessary
+				const sortedCountries = response.data.sort(sortByName);
+				cache.countries = sortedCountries; // Store the reference to avoid mutation
 				setCountries(sortedCountries);
-				return true;
 			} catch (error) {
-				throw new Error(error);
+				console.error(error);
 			}
 		}
-		setTimeout(() => {
-			fetchCountriesData()
-				.then((res) => {
-					setTimeout(() => {
-						if (res) window.scrollTo(0, 0);
-					}, 100);
-				})
-				.catch((error) => {
-					console.log(error);
-				})
-				.finally(() => {
-					Loader.close();
-				});
-		}, 2000);
-	}, [cache, SortByName]);
 
-	const filteredCountries = useMemo(
-		() =>
-			countries.filter((country) => {
-				const query = searchQuery.toLowerCase();
-				return country.name.common.toLowerCase().includes(query) || country.continents.some((continent) => continent.toLowerCase().includes(query));
-			}),
-		[countries, searchQuery]
-	);
+		fetchCountriesData()
+			.then(() => {
+				setTimeout(() => {
+					if (cache.state) {
+						const element = document.getElementById(cache.state);
+						if (element) {
+							element.scrollIntoView({ behavior: "instant", block: "nearest" });
+						}
+					} else {
+						window.scrollTo(0, 0);
+					}
+				}, 0);
+			})
+			.finally(() => {
+				Loader.close();
+			});
+	}, [sortByName]);
+
+	// Memoize filtered countries
+	const filteredCountries = useMemo(() => {
+		const query = searchQuery.toLowerCase();
+		return countries.filter((country) => {
+			return country.name.common.toLowerCase().includes(query) || country.continents.some((continent) => continent.toLowerCase().includes(query));
+		});
+	}, [countries, searchQuery]);
+
+	const gotoCountryPage = (country) => {
+		cache.state = country.ccn3;
+		navigate("/country", { state: { country: country.ccn3 } });
+	};
 
 	return (
 		<>
 			<section>
-				<h2>World Atlas: Explore Countries, States, Cities, and Population Insights</h2>
+				<abbr title="Explore Countries, States, Cities, and Population Insights">
+					<h2 id="header-title">World Atlas</h2>
+				</abbr>
 				<div className="search-container">
 					<input
 						tabIndex={1}
@@ -99,8 +115,7 @@ const App = memo(({ cache }) => {
 									<strong>Population:</strong> {formatPopulation(country.population)}
 								</p>
 								<p>
-									{/* <strong>All Data:</strong> */}
-									<a onClick={() => navigate("/country", { state: country.ccn3 })}>View All Data</a>
+									<a onClick={() => gotoCountryPage(country)}>View All Data</a>
 								</p>
 							</div>
 					  ))
@@ -127,7 +142,8 @@ App.propTypes = {
 				}).isRequired,
 				population: PropTypes.number
 			})
-		)
+		),
+		state: PropTypes.string
 	}).isRequired
 };
 

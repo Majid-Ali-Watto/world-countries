@@ -3,58 +3,55 @@ import axios from "axios";
 import { Loader } from "./Loader";
 import { useLocation, useNavigate } from "react-router-dom";
 import { formatPopulation } from "../utils/format-population";
+
 function CountryCard() {
 	const [countries, setCountries] = useState([]);
 	const [borders, setBorders] = useState([]);
 	const [bordersNames, setBordersNames] = useState([]);
 	const location = useLocation();
 	const navigate = useNavigate();
-	const data = location.state;
+	const data = location.state.country;
+
 	useEffect(() => {
-		sessionStorage.setItem("flag", JSON.stringify(true));
 		window.scrollTo(0, 0);
 		async function fetchCountriesData() {
 			try {
 				const response = await axios.get(`/alpha?codes=${data}`);
-				setCountries(response.data);
 				console.log(response.data);
-				Loader.close();
+				setCountries(response.data);
 				setBorders(response.data[0].borders);
+				sessionStorage.setItem("countries", JSON.stringify(response.data));
+				sessionStorage.setItem("flag", JSON.stringify(true));
+			} catch (error) {
+				console.log(error);
+			} finally {
+				Loader.close();
+			}
+		}
+		if (!JSON.parse(sessionStorage.getItem("flag"))) fetchCountriesData();
+		else {
+			setCountries(JSON.parse(sessionStorage.getItem("countries")));
+			Loader.close();
+		}
+	}, [data]);
+
+	useEffect(() => {
+		if (!borders || borders.length === 0) return;
+		async function getCountriesNames() {
+			try {
+				const response = await axios.get(`/alpha?codes=${borders.join(",")}&fields=name`);
+				const names = response.data.map((country) => country.name.common);
+				setBordersNames(names);
+				sessionStorage.setItem("borders", JSON.stringify(names));
 			} catch (error) {
 				console.log(error);
 			}
 		}
-		fetchCountriesData();
-	}, [data]);
-	useEffect(() => {
-		return () => {
-			setTimeout(() => {
-				const element = document.getElementById(data);
-				if (element) {
-					element.scrollIntoView({
-						behavior: "instant", // Optional: smooth scrolling
-						block: "center" // Optional: alignment control
-					});
-				}
-			}, 0);
-		};
-	}, [data]);
-	useEffect(() => {
-		async function getCountriesNames() {
-			const countries = [];
-			for (let index = 0; index < borders?.length; index++) {
-				const country = borders[index];
-				try {
-					const response = await axios.get(`/alpha?codes=${country}&fields=name`);
-					countries.push(response.data[0].name.common);
-				} catch (error) {
-					console.log(error);
-				}
-			}
-			setBordersNames([...countries]);
-		}
-		getCountriesNames();
+		const names = JSON.parse(sessionStorage.getItem("borders"));
+		if (!names || names?.length === 0) getCountriesNames();
+		else setBordersNames(names);
 	}, [borders]);
+
 	function getStates(countryName) {
 		Loader.start();
 		let data = JSON.stringify({

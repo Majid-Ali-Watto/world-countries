@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { formatPopulation } from "../utils/format-population";
+import PopulationDetails from "./Population-Details";
 
 function CountryPopulation() {
 	const { state: { populations, countryName } = {} } = useLocation();
@@ -18,9 +18,11 @@ function CountryPopulation() {
 					<summary className="state-summary">
 						<span>{year}</span>
 					</summary>
-					<span className="population-info">
-						In {year}, the population of {countryName} was {value} ({formatPopulation(value)}).
-					</span>
+					<PopulationDetails
+						year={year}
+						value={value}
+						countryName={countryName}
+					/>
 				</details>
 			))}
 		</div>

@@ -24,7 +24,7 @@
 /* Base Styles */
 body {
   margin: 0;
-  padding: 20px;
+  /* padding: 20px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,6 +50,10 @@ h1 {
 
 h2 {
   font-size: var(--font-size-h2);
+}
+
+#header-title {
+  font-size: 1.8rem;
 }
 
 a {
@@ -207,7 +211,7 @@ section:hover {
   margin-bottom: 10px;
 }
 
-.card p {
+p {
   font-size: var(--font-size-small);
   color: var(--secondary-text-color);
   margin: 5px 0;
@@ -328,7 +332,7 @@ section:hover {
 .loading-spinner {
   border-bottom: 8px solid rgba(0, 0, 0, 0.1);
   border-top: 8px solid rgba(59, 59, 59, 0.1);
-  border-right: 8px solid rgba(100, 100, 100, 0.1);
+  border-right: 8px solid rgba(255, 0, 0, 0.938);
   border-left: 8px solid var(--spinner-color);
   border-radius: 50%;
   width: 50px;
@@ -425,7 +429,8 @@ summary {
   overflow: auto;
   display: flex;
   justify-content: flex-start;
-  gap: 10px;
+  align-items: center;
+  row-gap: 10px;
   flex-wrap: wrap;
   margin-top: 10px;
 }
@@ -453,5 +458,36 @@ summary {
 
   margin-top: 5px;
   font-size: 1rem;
-  color: #c9d6df;
+  /* color: #c9d6df; */
+  color: var(--city-text-color);
+}
+
+
+/* Error Boundary Styles */
+.error-boundary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #d9534f;
+  border-radius: 8px;
+  background-color: #f8d7da;
+  color: #721c24;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.error-boundary h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.error-boundary p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+abbr{
+  text-decoration-line: none;
 }

@@ -1,38 +1,62 @@
-// import { StrictMode } from 'react'
+import { lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import axios from "axios";
 import App from "./App.jsx";
 import "./index.css";
+import ErrorBoundary from "./components/ErrorBoundry.jsx";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import CountryCard from "./components/Country.jsx";
-import axios from "axios";
-import CountryStates from "./components/Country-States.jsx";
-import CountryPopulation from "./components/Country-Population.jsx";
+const CountryCard = lazy(() => import("./components/Country.jsx"));
+const CountryPopulation = lazy(() => import("./components/Country-Population.jsx"));
+const CountryStates = lazy(() => import("./components/Country-States.jsx"));
+
 axios.defaults.baseURL = "https://restcountries.com/v3.1";
-axios.defaults.timeout = 5000;
+axios.defaults.timeout = 30000;
 
-const cache = { countries: [] };
+console.log = function () {};
+console.error = function () {};
+
+sessionStorage.clear();
+
+const cache = { countries: [], state: "" };
+
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <App cache={cache} />
+		element: (
+			<ErrorBoundary>
+				<App cache={cache} />
+			</ErrorBoundary>
+		)
 	},
 	{
 		path: "country",
-		element: <CountryCard />
+		element: (
+			<ErrorBoundary>
+				<CountryCard />
+			</ErrorBoundary>
+		)
 	},
 	{
 		path: "states",
-		element: <CountryStates />
+		element: (
+			<ErrorBoundary>
+				<CountryStates />
+			</ErrorBoundary>
+		)
 	},
 	{
 		path: "population",
-		element: <CountryPopulation />
+		element: (
+			<ErrorBoundary>
+				<CountryPopulation />
+			</ErrorBoundary>
+		)
 	}
 ]);
 
 createRoot(document.getElementById("root")).render(
-	// <Suspense fallback={<Loading />}>
-	<RouterProvider router={router} />
-	// </Suspense>
+	<Suspense fallback={<div>Loading...</div>}>
+		<RouterProvider router={router} />
+	</Suspense>
 );
