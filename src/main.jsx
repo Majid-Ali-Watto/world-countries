@@ -13,7 +13,9 @@ const CountryStates = lazy(() => import("./components/Country-States.jsx"));
 axios.defaults.baseURL = "https://restcountries.com/v3.1";
 axios.defaults.timeout = 30000;
 
-console.log = function () {};
+console.log = function (...args) {
+	console.info(...args);
+};
 console.error = function () {};
 
 sessionStorage.clear();

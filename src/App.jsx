@@ -58,6 +58,7 @@ const App = memo(() => {
 	// Memoize filtered countries
 	const filteredCountries = useMemo(() => {
 		const query = searchQuery.toLowerCase();
+		console.log(query);
 		return countries.filter((country) => {
 			return country.name.common.toLowerCase().includes(query) || country.continents.some((continent) => continent.toLowerCase().includes(query));
 		});
@@ -86,40 +87,44 @@ const App = memo(() => {
 				</div>
 			</section>
 			<div className="card-container">
-				{filteredCountries.length > 0
-					? filteredCountries.map((country, index) => (
-							<div
-								tabIndex={index + 2}
-								id={country.ccn3}
-								key={country.name.common}
-								className="card">
-								<div>
-									<h2 id="country-name">
-										{index + 1}. {country.name.common}
-									</h2>
-								</div>
-
-								<img
-									src={country.flags.svg}
-									alt={country.flags.alt}
-									className="flag"
-									loading="lazy"
-								/>
-								<p>
-									<strong>Capital:</strong> {country.capital?.join(", ") || "N/A"}
-								</p>
-								<p>
-									<strong>Continents:</strong> {country.continents?.join(", ")}
-								</p>
-								<p>
-									<strong>Population:</strong> {formatPopulation(country.population)}
-								</p>
-								<p>
-									<a onClick={() => gotoCountryPage(country)}>View All Data</a>
-								</p>
+				{filteredCountries.length > 0 ? (
+					filteredCountries.map((country, index) => (
+						<div
+							tabIndex={index + 2}
+							id={country.ccn3}
+							key={country.name.common}
+							className="card">
+							<div>
+								<h2 id="country-name">
+									{index + 1}. {country.name.common}
+								</h2>
 							</div>
-					  ))
-					: Loader.start()}
+
+							<img
+								src={country.flags.svg}
+								alt={country.flags.alt}
+								className="flag"
+								loading="lazy"
+							/>
+							<p>
+								<strong>Capital:</strong> {country.capital?.join(", ") || "N/A"}
+							</p>
+							<p>
+								<strong>Continents:</strong> {country.continents?.join(", ")}
+							</p>
+							<p>
+								<strong>Population:</strong> {formatPopulation(country.population)}
+							</p>
+							<p>
+								<a onClick={() => gotoCountryPage(country)}>View All Data</a>
+							</p>
+						</div>
+					))
+				) : searchQuery ? (
+					<p>No data found</p>
+				) : (
+					Loader.start()
+				)}
 			</div>
 		</>
 	);
