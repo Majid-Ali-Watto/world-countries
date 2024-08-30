@@ -4,8 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import { formatPopulation } from "./utils/format-population";
-import { Loader } from "./components/Loader";
-
+import { Loader } from "circle-loader";
 // Move this outside of the App component
 const cache = { countries: [], state: "" };
 

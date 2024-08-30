@@ -5,7 +5,7 @@ import axios from "axios";
 import App from "./App.jsx";
 import "./index.css";
 import ErrorBoundary from "./components/ErrorBoundry.jsx";
-
+import 'circle-loader/dist/bundle.css'
 const CountryCard = lazy(() => import("./components/Country.jsx"));
 const CountryPopulation = lazy(() => import("./components/Country-Population.jsx"));
 const CountryStates = lazy(() => import("./components/Country-States.jsx"));

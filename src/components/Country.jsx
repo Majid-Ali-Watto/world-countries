@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Loader } from "./Loader";
+import { Loader } from "circle-loader";
+
 import { useLocation, useNavigate } from "react-router-dom";
 import { formatPopulation } from "../utils/format-population";
 

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import { Loader } from "./Loader";
+import { Loader } from "circle-loader";
 
 function CountryStates() {
 	const location = useLocation();

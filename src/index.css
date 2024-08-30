@@ -314,7 +314,7 @@ p {
 }
 
 /* Loading Spinner */
-.loading-overlay {
+/* .loading-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -324,7 +324,6 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: var(--overlay-bg-color); */
   background-color: #1a1a1a;
   z-index: 1000;
 }
@@ -348,7 +347,7 @@ p {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 .loading-overlay p {
   margin-top: 10px;
