@@ -3,7 +3,7 @@ import axios from "axios";
 
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
-import { formatPopulation } from "./utils/format-population";
+// import { formatPopulation } from "./utils/format-population";
 import { Loader } from "circle-loader";
 // Move this outside of the App component
 const cache = { countries: [], state: "" };
@@ -27,7 +27,7 @@ const App = memo(() => {
 			}
 			try {
 				console.log("Fetching countries");
-				const response = await axios.get("/all?fields=name,capital,continents,flags,population,ccn3");
+				const response = await axios.get("/all?fields=name,capital,continents,flags,ccn3");
 				const sortedCountries = response.data.sort(sortByName);
 				cache.countries = sortedCountries; // Store the reference to avoid mutation
 				setCountries(sortedCountries);
@@ -111,9 +111,9 @@ const App = memo(() => {
 							<p>
 								<strong>Continents:</strong> {country.continents?.join(", ")}
 							</p>
-							<p>
+							{/* <p>
 								<strong>Population:</strong> {formatPopulation(country.population)}
-							</p>
+							</p> */}
 							<p>
 								<a onClick={() => gotoCountryPage(country)}>View All Data</a>
 							</p>

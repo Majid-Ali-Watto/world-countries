@@ -83,27 +83,20 @@ function CountryCard() {
 				Loader.close();
 			});
 	}
-	function getPopoulation(countryName) {
+	function getPopoulation(countryName, page, list) {
 		Loader.start();
-		let data = JSON.stringify({
-			country: countryName
-		});
-
 		let config = {
-			method: "post",
-			maxBodyLength: Infinity,
-			url: "https://countriesnow.space/api/v0.1/countries/population",
-			headers: {
-				"Content-Type": "application/json"
-			},
-			data: data
+			method: "get",
+			url: `https://api.worldbank.org/v2/country/${countryName.at(0).replace(".", "")}/indicator/sp.pop.totl?format=json&page=${page}`
 		};
 
 		axios
 			.request(config)
-			.then((response) => {
-				console.log(response.data);
-				navigate("/population", { state: { populations: response.data, countryName } });
+			.then(async (response) => {
+				console.log(response.data[1]);
+				list = [...list, ...response.data[1]];
+				if (response.data[0].pages == page) navigate("/population", { state: { populations: list, countryName } });
+				else getPopoulation(countryName, ++page, list);
 			})
 			.catch((error) => {
 				console.log(error);
@@ -113,6 +106,27 @@ function CountryCard() {
 			});
 	}
 
+	async function getLiteracyRate(countryName, page, list) {
+		Loader.start();
+		let config = {
+			method: "get",
+			url: `https://api.worldbank.org/v2/country/${countryName.at(0).replace(".", "")}/indicator/SE.ADT.LITR.ZS?format=json&page=${page}`
+		};
+		axios
+			.request(config)
+			.then(async (response) => {
+				console.log(response.data[1]);
+				list = [...list, ...response.data[1]];
+				if (response.data[0].pages == page) navigate("/literacy", { state: { literacies: list, countryName } });
+				else getLiteracyRate(countryName, ++page, list);
+			})
+			.catch((error) => {
+				console.log(error);
+			})
+			.finally(() => {
+				Loader.close();
+			});
+	}
 	return (
 		<div className="country-card-container">
 			{countries.length > 0
@@ -301,7 +315,9 @@ function CountryCard() {
 							<br />
 							<p style={{ display: "flex", justifyContent: "space-evenly", flexWrap: "wrap" }}>
 								<a onClick={() => getStates(country.name.common)}>View {country.name.common}&apos;s states</a>
-								<a onClick={() => getPopoulation(country.name.common)}>View {country.name.common}&apos;s Population</a>
+								{/* <a onClick={() => getPopoulation(country.name.common)}>View {country.name.common}&apos;s Population</a> */}
+								<a onClick={() => getPopoulation(country?.tld, 1, [])}>View {country.name.common}&apos;s Population</a>
+								<a onClick={() => getLiteracyRate(country?.tld, 1, [])}>View {country.name.common}&apos;s Literacy Rate</a>
 							</p>
 							<br />
 							<button onClick={() => navigate("/")}>Back</button>

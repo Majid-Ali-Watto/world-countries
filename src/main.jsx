@@ -8,6 +8,7 @@ import ErrorBoundary from "./components/ErrorBoundry.jsx";
 // import 'circle-loader/dist/bundle.css'
 const CountryCard = lazy(() => import("./components/Country.jsx"));
 const CountryPopulation = lazy(() => import("./components/Country-Population.jsx"));
+const CountryLiteracy = lazy(() => import("./components/Country-Literacy.jsx"));
 const CountryStates = lazy(() => import("./components/Country-States.jsx"));
 
 axios.defaults.baseURL = "https://restcountries.com/v3.1";
@@ -52,6 +53,14 @@ const router = createBrowserRouter([
 		element: (
 			<ErrorBoundary>
 				<CountryPopulation />
+			</ErrorBoundary>
+		)
+	},
+	{
+		path: "literacy",
+		element: (
+			<ErrorBoundary>
+				<CountryLiteracy />
 			</ErrorBoundary>
 		)
 	}
