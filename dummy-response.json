@@ -1,0 +1,4574 @@
+{
+    "data": {
+        "objects": [
+            {
+                "names": {
+                    "common": "Abkhazia"
+                },
+                "codes": {
+                    "alpha_3": "",
+                    "ccn3": ""
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 43.0033,
+                            "lng": 41.0153
+                        },
+                        "name": "Sukhumi"
+                    }
+                ],
+                "flag": {
+                    "description": "",
+                    "url_svg": ""
+                },
+                "continents": [
+                    "Asia"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557516
+                }
+            },
+            {
+                "names": {
+                    "common": "Afghanistan"
+                },
+                "codes": {
+                    "alpha_3": "AFG",
+                    "ccn3": "004"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 34.52,
+                            "lng": 69.18
+                        },
+                        "name": "Kabul"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Afghanistan is composed of three equal vertical bands of black, red and green, with the national emblem in white centered in the red band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/af.svg"
+                },
+                "continents": [
+                    "Asia"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724017
+                },
+                "region": "Asia",
+                "subregion": "Southern Asia",
+                "population": 43844111,
+                "area": {
+                    "kilometers": 652230
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "Albania"
+                },
+                "codes": {
+                    "alpha_3": "ALB",
+                    "ccn3": "008"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 41.32,
+                            "lng": 19.82
+                        },
+                        "name": "Tirana"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Albania features a silhouetted double-headed black eagle at the center of a red field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/al.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557516
+                },
+                "region": "Europe",
+                "subregion": "Southeast Europe",
+                "population": 2349580,
+                "area": {
+                    "kilometers": 28748
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Algeria"
+                },
+                "codes": {
+                    "alpha_3": "DZA",
+                    "ccn3": "012"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 36.75,
+                            "lng": 3.05
+                        },
+                        "name": "Algiers"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Algeria features two equal vertical bands of green and white. A five-pointed red star within a fly-side facing red crescent is centered over the two-color boundary.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/dz.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557516
+                },
+                "region": "Africa",
+                "subregion": "Northern Africa",
+                "population": 47435312,
+                "area": {
+                    "kilometers": 2381741
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "American Samoa"
+                },
+                "codes": {
+                    "alpha_3": "ASM",
+                    "ccn3": "016"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -14.27,
+                            "lng": -170.7
+                        },
+                        "name": "Pago Pago"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of American Samoa has a dark blue field, at the center of which is a red-edged white isosceles triangle that is based on the fly end and points towards the hoist side. Within this triangle is a brown and white bald eagle clutching a uatogi war club and a fue fly whisk.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/as.svg"
+                },
+                "continents": [
+                    "Oceania"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724017
+                },
+                "region": "Oceania",
+                "subregion": "Polynesia",
+                "population": 46029,
+                "area": {
+                    "kilometers": 199
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Andorra"
+                },
+                "codes": {
+                    "alpha_3": "AND",
+                    "ccn3": "020"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 42.5,
+                            "lng": 1.52
+                        },
+                        "name": "Andorra la Vella"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Andorra features three equal vertical bands of blue, yellow and red, with the coat of arms of Andorra centered in the yellow band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/ad.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1791047792
+                },
+                "region": "Europe",
+                "subregion": "Southern Europe",
+                "population": 82904,
+                "area": {
+                    "kilometers": 468
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "Angola"
+                },
+                "codes": {
+                    "alpha_3": "AGO",
+                    "ccn3": "024"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -8.83,
+                            "lng": 13.22
+                        },
+                        "name": "Luanda"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Angola features two equal horizontal bands of red and black, with a yellow emblem at its centre. This emblem consists of a five-pointed star within the hoist-side facing half of a cogwheel that is crossed on its lower end by a machete.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/ao.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1789184203
+                },
+                "region": "Africa",
+                "subregion": "Middle Africa",
+                "population": 39040039,
+                "area": {
+                    "kilometers": 1246700
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Anguilla"
+                },
+                "codes": {
+                    "alpha_3": "AIA",
+                    "ccn3": "660"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 18.22,
+                            "lng": -63.05
+                        },
+                        "name": "The Valley"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Anguilla has a dark blue field. It features the flag of the United Kingdom — the Union Jack — in the canton and a white shield bearing three interlocking orange dolphins above a light blue base, centered in the fly half.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/ai.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724017
+                },
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "area": {
+                    "kilometers": 91
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Antarctica"
+                },
+                "codes": {
+                    "alpha_3": "ATA",
+                    "ccn3": "010"
+                },
+                "capitals": [],
+                "flag": {
+                    "description": "The flag of Antarctica has a light blue field, at the center of which is a white silhouette of the continent of Antarctica.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/aq.svg"
+                },
+                "continents": [
+                    "Antarctica"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724017
+                },
+                "region": "Antarctic",
+                "subregion": "",
+                "area": {
+                    "kilometers": 14000000
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Antigua and Barbuda"
+                },
+                "codes": {
+                    "alpha_3": "ATG",
+                    "ccn3": "028"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 17.12,
+                            "lng": -61.85
+                        },
+                        "name": "Saint John's"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Antigua and Barbuda has a red field with an inverted isosceles triangle based on the top edge and spanning the height of the field. This triangle has three horizontal bands of black, light blue and white, with the light blue band half the height of the two other bands. The top half of a golden-yellow sun is situated in the lower two-third of the black band to depict a rising sun.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/ag.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557516
+                },
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 94209,
+                "area": {
+                    "kilometers": 442
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Argentina"
+                },
+                "codes": {
+                    "alpha_3": "ARG",
+                    "ccn3": "032"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -34.58,
+                            "lng": -58.67
+                        },
+                        "name": "Buenos Aires"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Argentina features three equal horizontal bands of light blue, white and light blue. A brown-edged golden sun is centered in the white band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/ar.svg"
+                },
+                "continents": [
+                    "South America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557516
+                },
+                "region": "Americas",
+                "subregion": "South America",
+                "population": 45851378,
+                "area": {
+                    "kilometers": 2780400
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Armenia"
+                },
+                "codes": {
+                    "alpha_3": "ARM",
+                    "ccn3": "051"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 40.17,
+                            "lng": 44.5
+                        },
+                        "name": "Yerevan"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Armenia is composed of three equal horizontal bands of red, blue and orange.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/am.svg"
+                },
+                "continents": [
+                    "Asia"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1789835642
+                },
+                "region": "Asia",
+                "subregion": "Western Asia",
+                "population": 3086700,
+                "area": {
+                    "kilometers": 29743
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "Aruba"
+                },
+                "codes": {
+                    "alpha_3": "ABW",
+                    "ccn3": "533"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 12.52,
+                            "lng": -70.03
+                        },
+                        "name": "Oranjestad"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Aruba has a light blue field with two thin yellow horizontal bands across its lower half. A white-edged red four-pointed star is situated in the upper hoist-side corner of the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/aw.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724017
+                },
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 108785,
+                "area": {
+                    "kilometers": 180
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Australia"
+                },
+                "codes": {
+                    "alpha_3": "AUS",
+                    "ccn3": "036"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -35.27,
+                            "lng": 149.13
+                        },
+                        "name": "Canberra"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Australia has a dark blue field. It features the flag of the United Kingdom — the Union Jack — in the canton, beneath which is a large white seven-pointed star. A representation of the Southern Cross constellation, made up of one small five-pointed and four larger seven-pointed white stars, is situated on the fly side of the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/au.svg"
+                },
+                "continents": [
+                    "Oceania"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1789747895
+                },
+                "region": "Oceania",
+                "subregion": "Australia and New Zealand",
+                "population": 27614411,
+                "area": {
+                    "kilometers": 7692024
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Austria"
+                },
+                "codes": {
+                    "alpha_3": "AUT",
+                    "ccn3": "040"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 48.2,
+                            "lng": 16.37
+                        },
+                        "name": "Vienna"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Austria is composed of three equal horizontal bands of red, white and red.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/at.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557516
+                },
+                "region": "Europe",
+                "subregion": "Central Europe",
+                "population": 9208163,
+                "area": {
+                    "kilometers": 83871
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "Azerbaijan"
+                },
+                "codes": {
+                    "alpha_3": "AZE",
+                    "ccn3": "031"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 40.38,
+                            "lng": 49.87
+                        },
+                        "name": "Baku"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Azerbaijan features three equal horizontal bands of blue, red and green, with a white fly-side facing crescent and eight-pointed star centered in the red band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/az.svg"
+                },
+                "continents": [
+                    "Europe",
+                    "Asia"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557516
+                },
+                "region": "Asia",
+                "subregion": "Western Asia",
+                "population": 10246996,
+                "area": {
+                    "kilometers": 86600
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "Bahamas"
+                },
+                "codes": {
+                    "alpha_3": "BHS",
+                    "ccn3": "044"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 25.08,
+                            "lng": -77.35
+                        },
+                        "name": "Nassau"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of the Bahamas is composed of three equal horizontal bands of aquamarine, yellow and aquamarine, with a black equilateral triangle superimposed on the hoist side of the field. This triangle has its base on the hoist end and spans about one-third the width of the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bs.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557516
+                },
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 403033,
+                "area": {
+                    "kilometers": 13943
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Bahrain"
+                },
+                "codes": {
+                    "alpha_3": "BHR",
+                    "ccn3": "048"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 26.23,
+                            "lng": 50.57
+                        },
+                        "name": "Manama"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Bahrain has a red field. On the hoist side, it features a white vertical band that spans about one-third the width of the field and is separated from the rest of the field by five adjoining fly-side pointing white isosceles triangles that serve as a serrated line.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bh.svg"
+                },
+                "continents": [
+                    "Asia"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557516
+                },
+                "region": "Asia",
+                "subregion": "Western Asia",
+                "population": 1600366,
+                "area": {
+                    "kilometers": 765
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Bangladesh"
+                },
+                "codes": {
+                    "alpha_3": "BGD",
+                    "ccn3": "050"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 23.72,
+                            "lng": 90.4
+                        },
+                        "name": "Dhaka"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Bangladesh has a dark green field bearing a large red circle that is offset slightly towards the hoist side of center.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bd.svg"
+                },
+                "continents": [
+                    "Asia"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557516
+                },
+                "region": "Asia",
+                "subregion": "Southern Asia",
+                "population": 175686899,
+                "area": {
+                    "kilometers": 147570
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Barbados"
+                },
+                "codes": {
+                    "alpha_3": "BRB",
+                    "ccn3": "052"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 13.1,
+                            "lng": -59.62
+                        },
+                        "name": "Bridgetown"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Barbados is composed of three equal vertical bands of ultramarine, gold and ultramarine. The head of a black trident is centered in the gold band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bb.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557516
+                },
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 282623,
+                "area": {
+                    "kilometers": 430
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Belarus"
+                },
+                "codes": {
+                    "alpha_3": "BLR",
+                    "ccn3": "112"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 53.9,
+                            "lng": 27.57
+                        },
+                        "name": "Minsk"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Belarus features a vertical band, with a white and red ornamental pattern, spanning about one-ninth the width of the field on the hoist side. Adjoining the vertical band are two horizontal bands of red and green, with the red band twice the height of the green band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/by.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724017
+                },
+                "region": "Europe",
+                "subregion": "Eastern Europe",
+                "population": 9085991,
+                "area": {
+                    "kilometers": 207600
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "Belgium"
+                },
+                "codes": {
+                    "alpha_3": "BEL",
+                    "ccn3": "056"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 50.83,
+                            "lng": 4.33
+                        },
+                        "name": "Brussels"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Belgium is composed of three equal vertical bands of black, yellow and red.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/be.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557516
+                },
+                "region": "Europe",
+                "subregion": "Western Europe",
+                "population": 11941781,
+                "area": {
+                    "kilometers": 30528
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Belize"
+                },
+                "codes": {
+                    "alpha_3": "BLZ",
+                    "ccn3": "084"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 17.25,
+                            "lng": -88.77
+                        },
+                        "name": "Belmopan"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Belize has a royal blue field with a thin red horizontal band at the top and bottom of the field and the national coat of arms in the center.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bz.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557516
+                },
+                "region": "Americas",
+                "subregion": "Central America",
+                "population": 422924,
+                "area": {
+                    "kilometers": 22966
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Benin"
+                },
+                "codes": {
+                    "alpha_3": "BEN",
+                    "ccn3": "204"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 6.48,
+                            "lng": 2.62
+                        },
+                        "name": "Porto-Novo"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Benin features a green vertical band on its hoist side that takes up about two-fifth the width of the field and two equal horizontal bands of yellow and red adjoining the vertical band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bj.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557516
+                },
+                "region": "Africa",
+                "subregion": "Western Africa",
+                "population": 14814460,
+                "area": {
+                    "kilometers": 112622
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Bermuda"
+                },
+                "codes": {
+                    "alpha_3": "BMU",
+                    "ccn3": "060"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 32.28,
+                            "lng": -64.78
+                        },
+                        "name": "Hamilton"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Bermuda has a red field. It features the flag of the United Kingdom — the Union Jack — in the canton and the coat of arms of Bermuda, a white shield bearing a red lion that holds a scroll depicting a wrecked ship, centered in the fly half.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bm.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1790370196
+                },
+                "region": "Americas",
+                "subregion": "North America",
+                "population": 64555,
+                "area": {
+                    "kilometers": 54
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Bhutan"
+                },
+                "codes": {
+                    "alpha_3": "BTN",
+                    "ccn3": "064"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 27.47,
+                            "lng": 89.63
+                        },
+                        "name": "Thimphu"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Bhutan is divided diagonally, from the lower hoist-side corner to the upper fly-side corner, into an upper yellow and a lower orange triangle. A fly-side facing white dragon holding four jewels in its claws is situated along the boundary of the two triangles.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bt.svg"
+                },
+                "continents": [
+                    "Asia"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1791374497
+                },
+                "region": "Asia",
+                "subregion": "Southern Asia",
+                "population": 796682,
+                "area": {
+                    "kilometers": 38394
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "Bolivia"
+                },
+                "codes": {
+                    "alpha_3": "BOL",
+                    "ccn3": "068"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": true,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": false
+                        },
+                        "coordinates": {
+                            "lat": -19.04,
+                            "lng": -65.26
+                        },
+                        "name": "Sucre"
+                    },
+                    {
+                        "attributes": {
+                            "administrative": true,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": false
+                        },
+                        "coordinates": {
+                            "lat": -16.5,
+                            "lng": -68.15
+                        },
+                        "name": "La Paz"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Bolivia is composed of three equal horizontal bands of red, yellow and green, with the national coat of arms centered in the yellow band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bo.svg"
+                },
+                "continents": [
+                    "South America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Americas",
+                "subregion": "South America",
+                "population": 12581843,
+                "area": {
+                    "kilometers": 1098581
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "Bosnia and Herzegovina"
+                },
+                "codes": {
+                    "alpha_3": "BIH",
+                    "ccn3": "070"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 43.87,
+                            "lng": 18.42
+                        },
+                        "name": "Sarajevo"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Bosnia and Herzegovina has a blue field, at the center of which is a large yellow hoist-side facing right-angled triangle that is based on the top edge and spans the height of the field. Adjacent to the hypotenuse of this triangle are nine adjoining five-pointed white stars with the top and bottom stars cut in half by the edges of the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/ba.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Europe",
+                "subregion": "Southeast Europe",
+                "population": 3140095,
+                "area": {
+                    "kilometers": 51209
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Botswana"
+                },
+                "codes": {
+                    "alpha_3": "BWA",
+                    "ccn3": "072"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -24.63,
+                            "lng": 25.9
+                        },
+                        "name": "Gaborone"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Botswana has a light blue field with a white-edged black horizontal band across its center.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bw.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1791021617
+                },
+                "region": "Africa",
+                "subregion": "Southern Africa",
+                "population": 2562122,
+                "area": {
+                    "kilometers": 582000
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "Bouvet Island"
+                },
+                "codes": {
+                    "alpha_3": "BVT",
+                    "ccn3": "074"
+                },
+                "capitals": [],
+                "flag": {
+                    "description": "The flag of Norway has a red field with a large white-edged navy blue cross that extends to the edges of the field. The vertical part of this cross is offset towards the hoist side.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bv.svg"
+                },
+                "continents": [
+                    "Antarctica"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724017
+                },
+                "region": "Antarctic",
+                "subregion": "",
+                "area": {
+                    "kilometers": 49
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Brazil"
+                },
+                "codes": {
+                    "alpha_3": "BRA",
+                    "ccn3": "076"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -15.79,
+                            "lng": -47.88
+                        },
+                        "name": "Brasília"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Brazil has a green field with a large yellow rhombus in the center. Within the rhombus is a dark blue globe with twenty-seven small five-pointed white stars depicting a starry sky and a thin white convex horizontal band inscribed with the national motto 'Ordem e Progresso' across its center.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/br.svg"
+                },
+                "continents": [
+                    "South America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Americas",
+                "subregion": "South America",
+                "population": 212812405,
+                "area": {
+                    "kilometers": 8515767
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "British Indian Ocean Territory"
+                },
+                "codes": {
+                    "alpha_3": "IOT",
+                    "ccn3": "086"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -7.3133,
+                            "lng": 72.4111
+                        },
+                        "name": "Diego Garcia"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of the British Indian Ocean Territory has a field of alternating white and blue wavy horizontal bands. It features the flag of the United Kingdom — the Union Jack — in the canton and a palm tree surmounted by a crown in the fly half.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/io.svg"
+                },
+                "continents": [
+                    "Asia"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724018
+                },
+                "region": "Africa",
+                "subregion": "Eastern Africa",
+                "area": {
+                    "kilometers": 60
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "British Virgin Islands"
+                },
+                "codes": {
+                    "alpha_3": "VGB",
+                    "ccn3": "092"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 18.42,
+                            "lng": -64.62
+                        },
+                        "name": "Road Town"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of the British Virgin Islands has a dark blue field. It features the flag of the United Kingdom — the Union Jack — in the canton and the coat of arms of the territory — a green shield bearing Saint Ursula holding an oil lamp and flanked by further oil lamps, above a scroll inscribed 'VIGILATE' — centered in the fly half.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/vg.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1791200068
+                },
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 39732,
+                "area": {
+                    "kilometers": 151
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Brunei"
+                },
+                "codes": {
+                    "alpha_3": "BRN",
+                    "ccn3": "096"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 4.88,
+                            "lng": 114.93
+                        },
+                        "name": "Bandar Seri Begawan"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Brunei has a yellow field with two adjoining diagonal bands of white and black that extend from the upper hoist side of the field to the lower fly side. The red emblem of Brunei is centered on the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bn.svg"
+                },
+                "continents": [
+                    "Asia"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Asia",
+                "subregion": "South-Eastern Asia",
+                "population": 466330,
+                "area": {
+                    "kilometers": 5765
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Bulgaria"
+                },
+                "codes": {
+                    "alpha_3": "BGR",
+                    "ccn3": "100"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 42.68,
+                            "lng": 23.32
+                        },
+                        "name": "Sofia"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Bulgaria is composed of three equal horizontal bands of white, green and red.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bg.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Europe",
+                "subregion": "Southeast Europe",
+                "population": 6433302,
+                "area": {
+                    "kilometers": 110879
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Burkina Faso"
+                },
+                "codes": {
+                    "alpha_3": "BFA",
+                    "ccn3": "854"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 12.37,
+                            "lng": -1.52
+                        },
+                        "name": "Ouagadougou"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Burkina Faso features two equal horizontal bands of red and green, with a yellow five-pointed star in the center.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bf.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Africa",
+                "subregion": "Western Africa",
+                "population": 24074580,
+                "area": {
+                    "kilometers": 272967
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "Burundi"
+                },
+                "codes": {
+                    "alpha_3": "BDI",
+                    "ccn3": "108"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -3.43,
+                            "lng": 29.93
+                        },
+                        "name": "Gitega"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Burundi is divided by a white diagonal cross into four alternating triangular areas of red at the top and bottom, and green on the hoist and fly sides. A white circle, with three green-edged red six-pointed stars arranged to form a triangle, is superimposed at the center of the cross.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bi.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1789241057
+                },
+                "region": "Africa",
+                "subregion": "Eastern Africa",
+                "population": 14390003,
+                "area": {
+                    "kilometers": 27834
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "Cabo Verde"
+                },
+                "codes": {
+                    "alpha_3": "CPV",
+                    "ccn3": "132"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 14.92,
+                            "lng": -23.52
+                        },
+                        "name": "Praia"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Cape Verde is composed of five horizontal bands of blue, white, red, white and blue in the ratio of 6:1:1:1:3. A ring of ten five-pointed yellow stars is centered at three-eighth of the height from the bottom edge and three-eighth of the width from the hoist end of the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/cv.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1790025379
+                },
+                "region": "Africa",
+                "subregion": "Western Africa",
+                "population": 527326,
+                "area": {
+                    "kilometers": 4033
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Cambodia"
+                },
+                "codes": {
+                    "alpha_3": "KHM",
+                    "ccn3": "116"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 11.55,
+                            "lng": 104.92
+                        },
+                        "name": "Phnom Penh"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Cambodia features three horizontal bands of blue, red and blue, with a white depiction of the temple complex, Angkor Wat centered in the red band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/kh.svg"
+                },
+                "continents": [
+                    "Asia"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Asia",
+                "subregion": "South-Eastern Asia",
+                "population": 17847982,
+                "area": {
+                    "kilometers": 181035
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Cameroon"
+                },
+                "codes": {
+                    "alpha_3": "CMR",
+                    "ccn3": "120"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 3.85,
+                            "lng": 11.5
+                        },
+                        "name": "Yaoundé"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Cameroon is composed of three equal vertical bands of green, red and yellow, with a yellow five-pointed star in the center.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/cm.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Africa",
+                "subregion": "Middle Africa",
+                "population": 29879337,
+                "area": {
+                    "kilometers": 475442
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Canada"
+                },
+                "codes": {
+                    "alpha_3": "CAN",
+                    "ccn3": "124"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 45.42,
+                            "lng": -75.7
+                        },
+                        "name": "Ottawa"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Canada is composed of a red vertical band on the hoist and fly sides and a central white square that is twice the width of the vertical bands. A large eleven-pointed red maple leaf is centered in the white square.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/ca.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1790182685
+                },
+                "region": "Americas",
+                "subregion": "North America",
+                "population": 41651653,
+                "area": {
+                    "kilometers": 9984670
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Caribbean Netherlands"
+                },
+                "codes": {
+                    "alpha_3": "BES",
+                    "ccn3": "535"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 12.14,
+                            "lng": -68.27
+                        },
+                        "name": "Kralendijk"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of the Caribbean Netherlands has a white field with a yellow triangle in the upper hoist-side corner and a blue triangle spanning the lower fly side. A black-edged compass rose bearing a red six-pointed star is situated on the white area towards the hoist side.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/bq.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724017
+                },
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "area": {
+                    "kilometers": 328
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Cayman Islands"
+                },
+                "codes": {
+                    "alpha_3": "CYM",
+                    "ccn3": "136"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 19.3,
+                            "lng": -81.38
+                        },
+                        "name": "George Town"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of the Cayman Islands has a dark blue field. It features the flag of the United Kingdom — the Union Jack — in the canton and the coat of arms of the territory — a shield bearing a gold lion above three green five-pointed stars on blue and white wavy bands, surmounted by a green turtle and a pineapple — centered in the fly half.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/ky.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724018
+                },
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 75844,
+                "area": {
+                    "kilometers": 264
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Central African Republic"
+                },
+                "codes": {
+                    "alpha_3": "CAF",
+                    "ccn3": "140"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 4.37,
+                            "lng": 18.58
+                        },
+                        "name": "Bangui"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Central African Republic is composed of four equal horizontal bands of blue, white, green and yellow intersected at the center by a vertical red band of equal size as the horizontal bands. A yellow five-pointed star is situated on the hoist side of the blue band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/cf.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Africa",
+                "subregion": "Middle Africa",
+                "population": 5513282,
+                "area": {
+                    "kilometers": 622984
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "Chad"
+                },
+                "codes": {
+                    "alpha_3": "TCD",
+                    "ccn3": "148"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 12.1,
+                            "lng": 15.03
+                        },
+                        "name": "N'Djamena"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Chad is composed of three equal vertical bands of blue, gold and red.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/td.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Africa",
+                "subregion": "Middle Africa",
+                "population": 21003705,
+                "area": {
+                    "kilometers": 1284000
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "Chile"
+                },
+                "codes": {
+                    "alpha_3": "CHL",
+                    "ccn3": "152"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -33.45,
+                            "lng": -70.67
+                        },
+                        "name": "Santiago"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Chile is composed of two equal horizontal bands of white and red, with a blue square of the same height as the white band superimposed in the canton. A white five-pointed star is centered in the blue square.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/cl.svg"
+                },
+                "continents": [
+                    "South America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Americas",
+                "subregion": "South America",
+                "population": 19859921,
+                "area": {
+                    "kilometers": 756102
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "China"
+                },
+                "codes": {
+                    "alpha_3": "CHN",
+                    "ccn3": "156"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 39.92,
+                            "lng": 116.38
+                        },
+                        "name": "Beijing"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of China has a red field. In the canton are five yellow five-pointed stars — a large star and four smaller stars arranged in a vertical arc on the fly side of the large star.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/cn.svg"
+                },
+                "continents": [
+                    "Asia"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Asia",
+                "subregion": "Eastern Asia",
+                "population": 1406585000,
+                "area": {
+                    "kilometers": 9706961
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Christmas Island"
+                },
+                "codes": {
+                    "alpha_3": "CXR",
+                    "ccn3": "162"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -10.42,
+                            "lng": 105.68
+                        },
+                        "name": "Flying Fish Cove"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Christmas Island is divided diagonally, from the lower hoist-side corner to the upper fly-side corner, into a lower blue and an upper green triangle. A representation of the Southern Cross constellation, made up of one small and four larger white stars, is situated on the blue triangle and a golden bosun bird on the green triangle, with a yellow disc bearing a green map of the island at the center of the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/cx.svg"
+                },
+                "continents": [
+                    "Asia"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1790415775
+                },
+                "region": "Oceania",
+                "subregion": "Australia and New Zealand",
+                "area": {
+                    "kilometers": 135
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Cocos (Keeling) Islands"
+                },
+                "codes": {
+                    "alpha_3": "CCK",
+                    "ccn3": "166"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -12.17,
+                            "lng": 96.83
+                        },
+                        "name": "West Island"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of the Cocos (Keeling) Islands has a green field. A yellow disc bearing a green coconut palm is situated in the upper hoist-side corner, a yellow crescent at the center of the field, and a representation of the Southern Cross constellation, made up of one small and four larger yellow stars, on the fly side.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/cc.svg"
+                },
+                "continents": [
+                    "Asia"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724017
+                },
+                "region": "Oceania",
+                "subregion": "Australia and New Zealand",
+                "area": {
+                    "kilometers": 14
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Colombia"
+                },
+                "codes": {
+                    "alpha_3": "COL",
+                    "ccn3": "170"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 4.71,
+                            "lng": -74.07
+                        },
+                        "name": "Bogotá"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Colombia is composed of three horizontal bands of yellow, blue and red, with the yellow band twice the height of the other two bands.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/co.svg"
+                },
+                "continents": [
+                    "South America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Americas",
+                "subregion": "South America",
+                "population": 53425635,
+                "area": {
+                    "kilometers": 1141748
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Comoros"
+                },
+                "codes": {
+                    "alpha_3": "COM",
+                    "ccn3": "174"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -11.7,
+                            "lng": 43.23
+                        },
+                        "name": "Moroni"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Comoros is composed of four equal horizontal bands of yellow, white, red and blue, with a green isosceles triangle superimposed on the hoist side of the field. This triangle has its base on the hoist end, spans about two-fifth the width of the field and bears a fly-side facing white crescent and four five-pointed white stars arranged in a vertical line along the opening of the crescent.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/km.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Africa",
+                "subregion": "Eastern Africa",
+                "population": 882847,
+                "area": {
+                    "kilometers": 1862
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Congo"
+                },
+                "codes": {
+                    "alpha_3": "COG",
+                    "ccn3": "178"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -4.25,
+                            "lng": 15.28
+                        },
+                        "name": "Brazzaville"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of the Republic of the Congo features a yellow diagonal band that extends from the lower hoist-side corner to the upper fly-side corner of the field. Above and beneath this band are a green and red triangle respectively.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/cg.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Africa",
+                "subregion": "Middle Africa",
+                "population": 6484437,
+                "area": {
+                    "kilometers": 342000
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Cook Islands"
+                },
+                "codes": {
+                    "alpha_3": "COK",
+                    "ccn3": "184"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -21.2,
+                            "lng": -159.77
+                        },
+                        "name": "Avarua"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of the Cook Islands has a dark blue field. It features the flag of the United Kingdom — the Union Jack — in the canton and a ring of fifteen five-pointed white stars centered in the fly half.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/ck.svg"
+                },
+                "continents": [
+                    "Oceania"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724017
+                },
+                "region": "Oceania",
+                "subregion": "Polynesia",
+                "area": {
+                    "kilometers": 236
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Costa Rica"
+                },
+                "codes": {
+                    "alpha_3": "CRI",
+                    "ccn3": "188"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 9.93,
+                            "lng": -84.09
+                        },
+                        "name": "San José"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Costa Rica is composed of five horizontal bands of blue, white, red, white and blue. The central red band is twice the height of the other four bands and bears the national coat of arms within a white oval offset towards the hoist side.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/cr.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724017
+                },
+                "region": "Americas",
+                "subregion": "Central America",
+                "population": 5152950,
+                "area": {
+                    "kilometers": 51100
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Croatia"
+                },
+                "codes": {
+                    "alpha_3": "HRV",
+                    "ccn3": "191"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 45.815,
+                            "lng": 15.9819
+                        },
+                        "name": "Zagreb"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Croatia is composed of three equal horizontal bands of red, white and blue, with coat of arms of Croatia superimposed in the center.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/hr.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1790417338
+                },
+                "region": "Europe",
+                "subregion": "Southeast Europe",
+                "population": 3876200,
+                "area": {
+                    "kilometers": 56594
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Cuba"
+                },
+                "codes": {
+                    "alpha_3": "CUB",
+                    "ccn3": "192"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 23.12,
+                            "lng": -82.35
+                        },
+                        "name": "Havana"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Cuba is composed of five equal horizontal bands of blue alternating with white and a red equilateral triangle superimposed on the hoist side of the field. The triangle has its base on the hoist end, spans about two-fifth the width of the field and bears a white five-pointed star at its center.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/cu.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 10937203,
+                "area": {
+                    "kilometers": 109884
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Curaçao"
+                },
+                "codes": {
+                    "alpha_3": "CUW",
+                    "ccn3": "531"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 12.1,
+                            "lng": -68.92
+                        },
+                        "name": "Willemstad"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Curaçao has a dark blue field with a yellow horizontal band across its lower half. Two five-pointed white stars of differing size are situated in the upper hoist side of the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/cw.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724017
+                },
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 156263,
+                "area": {
+                    "kilometers": 444
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Cyprus"
+                },
+                "codes": {
+                    "alpha_3": "CYP",
+                    "ccn3": "196"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 35.17,
+                            "lng": 33.37
+                        },
+                        "name": "Nicosia"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Cyprus has a white field, at the center of which is a copper-colored silhouette of the Island of Cyprus above two green olive branches crossed at the stem.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/cy.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Europe",
+                "subregion": "Southern Europe",
+                "population": 1370754,
+                "area": {
+                    "kilometers": 9251
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Czechia"
+                },
+                "codes": {
+                    "alpha_3": "CZE",
+                    "ccn3": "203"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 50.08,
+                            "lng": 14.47
+                        },
+                        "name": "Prague"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Czechia is composed of two equal horizontal bands of white and red, with a blue isosceles triangle superimposed on the hoist side of the field. The triangle has its base on the hoist end and spans about two-fifth the width of the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/cz.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1789247316
+                },
+                "region": "Europe",
+                "subregion": "Central Europe",
+                "population": 10886878,
+                "area": {
+                    "kilometers": 78865
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "DRC"
+                },
+                "codes": {
+                    "alpha_3": "COD",
+                    "ccn3": "180"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -4.32,
+                            "lng": 15.3
+                        },
+                        "name": "Kinshasa"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of the Democratic Republic of the Congo has a sky-blue field with a yellow-edged red diagonal band that extends from the lower hoist-side corner to the upper fly-side corner of the field. A large five-pointed yellow star is situated above the diagonal band on the upper hoist side of the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/cd.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Africa",
+                "subregion": "Middle Africa",
+                "population": 112832473,
+                "area": {
+                    "kilometers": 2344858
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Denmark"
+                },
+                "codes": {
+                    "alpha_3": "DNK",
+                    "ccn3": "208"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 55.67,
+                            "lng": 12.58
+                        },
+                        "name": "Copenhagen"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Denmark has a red field with a large white cross that extend to the edges of the field. The vertical part of this cross is offset towards the hoist side.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/dk.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1789134932
+                },
+                "region": "Europe",
+                "subregion": "Northern Europe",
+                "population": 6009169,
+                "area": {
+                    "kilometers": 43094
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Djibouti"
+                },
+                "codes": {
+                    "alpha_3": "DJI",
+                    "ccn3": "262"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 11.58,
+                            "lng": 43.15
+                        },
+                        "name": "Djibouti"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Djibouti is composed of two equal horizontal bands of light blue and light green, with a white isosceles triangle superimposed on the hoist side of the field. The triangle has its base on the hoist end, spans about two-fifth the width of the field and bears a red five-pointed star at its center.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/dj.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Africa",
+                "subregion": "Eastern Africa",
+                "population": 1184076,
+                "area": {
+                    "kilometers": 23200
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Dominica"
+                },
+                "codes": {
+                    "alpha_3": "DMA",
+                    "ccn3": "212"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 15.301,
+                            "lng": -61.3881
+                        },
+                        "name": "Roseau"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Dominica has a green field with a large centered tricolor cross. The vertical and horizontal parts of the cross each comprise three bands of yellow, black and white. A red circle, bearing a hoist-side facing purple Sisserou parrot standing on a twig and encircled by ten five-pointed yellow-edged green stars, is superimposed at the center of the cross.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/dm.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 65871,
+                "area": {
+                    "kilometers": 751
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Dominican Republic"
+                },
+                "codes": {
+                    "alpha_3": "DOM",
+                    "ccn3": "214"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 18.47,
+                            "lng": -69.9
+                        },
+                        "name": "Santo Domingo"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of the Dominican Republic is divided into four rectangles by a centered white cross that extends to the edges of the field and bears the national coat of arms in its center. The upper hoist-side and lower fly-side rectangles are blue and the lower hoist-side and upper fly-side rectangles are red.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/do.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 11520487,
+                "area": {
+                    "kilometers": 48671
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Ecuador"
+                },
+                "codes": {
+                    "alpha_3": "ECU",
+                    "ccn3": "218"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -0.22,
+                            "lng": -78.5
+                        },
+                        "name": "Quito"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Ecuador is composed of the horizontal bands of yellow, blue and red, with the yellow band twice the height of the other two bands. The Ecuadorian coat of arms is superimposed in the center of the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/ec.svg"
+                },
+                "continents": [
+                    "South America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Americas",
+                "subregion": "South America",
+                "population": 18289896,
+                "area": {
+                    "kilometers": 276841
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Egypt"
+                },
+                "codes": {
+                    "alpha_3": "EGY",
+                    "ccn3": "818"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 30.05,
+                            "lng": 31.25
+                        },
+                        "name": "Cairo"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Egypt is composed of three equal horizontal bands of red, white and black, with Egypt's national emblem — a hoist-side facing gold eagle of Saladin — centered in the white band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/eg.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Africa",
+                "subregion": "Northern Africa",
+                "population": 118365995,
+                "area": {
+                    "kilometers": 1002450
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "El Salvador"
+                },
+                "codes": {
+                    "alpha_3": "SLV",
+                    "ccn3": "222"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 13.6929,
+                            "lng": -89.2182
+                        },
+                        "name": "San Salvador"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of El Salvador is composed of three equal horizontal bands of cobalt blue, white and cobalt blue, with the national coat of arms centered in the white band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/sv.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Americas",
+                "subregion": "Central America",
+                "population": 6365503,
+                "area": {
+                    "kilometers": 21041
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Equatorial Guinea"
+                },
+                "codes": {
+                    "alpha_3": "GNQ",
+                    "ccn3": "226"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 3.75,
+                            "lng": 8.78
+                        },
+                        "name": "Malabo"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Equatorial Guinea is composed of three equal horizontal bands of green, white and red with the national coat of arms centered in the white band and an isosceles triangle superimposed on the hoist side of the field. The triangle is light blue, has its base on the hoist end and spans about one-fifth the width of the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/gq.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Africa",
+                "subregion": "Middle Africa",
+                "population": 1938431,
+                "area": {
+                    "kilometers": 28051
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Eritrea"
+                },
+                "codes": {
+                    "alpha_3": "ERI",
+                    "ccn3": "232"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 15.33,
+                            "lng": 38.93
+                        },
+                        "name": "Asmara"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Eritrea comprises three triangles — a large red isosceles triangle with its base spanning the hoist end and its apex at the midpoint on the fly end, and a green and blue right-angled triangle above and beneath the red triangle. On the hoist side of the red triangle is a golden vertical olive branch encircled by a golden olive wreath.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/er.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Africa",
+                "subregion": "Eastern Africa",
+                "population": 3607003,
+                "area": {
+                    "kilometers": 117600
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Estonia"
+                },
+                "codes": {
+                    "alpha_3": "EST",
+                    "ccn3": "233"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 59.43,
+                            "lng": 24.72
+                        },
+                        "name": "Tallinn"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Estonia is composed of three equal horizontal bands of blue, black and white.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/ee.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788668170
+                },
+                "region": "Europe",
+                "subregion": "Northern Europe",
+                "population": 1366475,
+                "area": {
+                    "kilometers": 45227
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Eswatini"
+                },
+                "codes": {
+                    "alpha_3": "SWZ",
+                    "ccn3": "748"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": true,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": false
+                        },
+                        "coordinates": {
+                            "lat": -26.31,
+                            "lng": 31.13
+                        },
+                        "name": "Mbabane"
+                    },
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": true,
+                            "primary": false
+                        },
+                        "coordinates": {
+                            "lat": -26.47,
+                            "lng": 31.2
+                        },
+                        "name": "Lobamba"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Eswatini is composed of three horizontal bands — a large central yellow-edged red band, and a light blue band above and beneath the red band. The red band is three times the height of the blue bands and bears a centered emblem made up of a large black and white Nguni shield covering two spears and a staff decorated with feather tassels, all placed horizontally.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/sz.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Africa",
+                "subregion": "Southern Africa",
+                "population": 1256174,
+                "area": {
+                    "kilometers": 17364
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "Ethiopia"
+                },
+                "codes": {
+                    "alpha_3": "ETH",
+                    "ccn3": "231"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 9.03,
+                            "lng": 38.7
+                        },
+                        "name": "Addis Ababa"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Ethiopia is composed of three equal horizontal bands of green, yellow and red, with the national emblem superimposed at the center of the field. The national emblem comprises a light blue circle bearing a golden-yellow pentagram with single yellow rays emanating from the angles between the points of the pentagram.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/et.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557517
+                },
+                "region": "Africa",
+                "subregion": "Eastern Africa",
+                "population": 135472051,
+                "area": {
+                    "kilometers": 1104300
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": true
+            },
+            {
+                "names": {
+                    "common": "Falkland Islands"
+                },
+                "codes": {
+                    "alpha_3": "FLK",
+                    "ccn3": "238"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -51.7,
+                            "lng": -57.85
+                        },
+                        "name": "Stanley"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of the Falkland Islands has a dark blue field. It features the flag of the United Kingdom — the Union Jack — in the canton and the coat of arms of the territory — a shield bearing a white ram above a sailing ship on the sea, over a scroll inscribed 'DESIRE THE RIGHT' — centered in the fly half.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/fk.svg"
+                },
+                "continents": [
+                    "South America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724017
+                },
+                "region": "Americas",
+                "subregion": "South America",
+                "area": {
+                    "kilometers": 12173
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Faroe Islands"
+                },
+                "codes": {
+                    "alpha_3": "FRO",
+                    "ccn3": "234"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 62.01,
+                            "lng": -6.77
+                        },
+                        "name": "Tórshavn"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of the Faroe Islands has a white field with a large blue-edged red cross that extends to the edges of the field. The vertical part of this cross is offset towards the hoist side.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/fo.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1790394972
+                },
+                "region": "Europe",
+                "subregion": "Northern Europe",
+                "population": 54900,
+                "area": {
+                    "kilometers": 1393
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Fiji"
+                },
+                "codes": {
+                    "alpha_3": "FJI",
+                    "ccn3": "242"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -18.13,
+                            "lng": 178.42
+                        },
+                        "name": "Suva"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Fiji has a light blue field. It features the flag of the United Kingdom — the Union Jack — in the canton and the shield of the national coat of arms centered in the fly half.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/fj.svg"
+                },
+                "continents": [
+                    "Oceania"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557518
+                },
+                "region": "Oceania",
+                "subregion": "Melanesia",
+                "population": 933154,
+                "area": {
+                    "kilometers": 18272
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Finland"
+                },
+                "codes": {
+                    "alpha_3": "FIN",
+                    "ccn3": "246"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 60.17,
+                            "lng": 24.93
+                        },
+                        "name": "Helsinki"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Finland has a white field with a large blue cross that extend to the edges of the field. The vertical part of this cross is offset towards the hoist side.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/fi.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1790417314
+                },
+                "region": "Europe",
+                "subregion": "Northern Europe",
+                "population": 5646436,
+                "area": {
+                    "kilometers": 338424
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "France"
+                },
+                "codes": {
+                    "alpha_3": "FRA",
+                    "ccn3": "250"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 48.87,
+                            "lng": 2.33
+                        },
+                        "name": "Paris"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of France is composed of three equal vertical bands of blue, white and red.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/fr.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557518
+                },
+                "region": "Europe",
+                "subregion": "Western Europe",
+                "population": 68720337,
+                "area": {
+                    "kilometers": 551695
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "French Guiana"
+                },
+                "codes": {
+                    "alpha_3": "GUF",
+                    "ccn3": "254"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 4.94,
+                            "lng": -52.33
+                        },
+                        "name": "Cayenne"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of French Guiana is divided diagonally, from the lower hoist-side corner to the upper fly-side corner, into a lower yellow and an upper green triangle. A five-pointed red star is centered on the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/gf.svg"
+                },
+                "continents": [
+                    "South America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1791047932
+                },
+                "region": "Americas",
+                "subregion": "South America",
+                "area": {
+                    "kilometers": 83534
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "French Polynesia"
+                },
+                "codes": {
+                    "alpha_3": "PYF",
+                    "ccn3": "258"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -17.53,
+                            "lng": -149.56
+                        },
+                        "name": "Papeetē"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of French Polynesia is composed of three horizontal bands of red, white and red, with the white band twice the height of the red bands. Centered in the white band is an emblem depicting an outrigger canoe bearing five figures on a blue and white sea, before a golden-yellow sun.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/pf.svg"
+                },
+                "continents": [
+                    "Oceania"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724018
+                },
+                "region": "Oceania",
+                "subregion": "Polynesia",
+                "population": 282465,
+                "area": {
+                    "kilometers": 4167
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "French Southern and Antarctic Lands"
+                },
+                "codes": {
+                    "alpha_3": "ATF",
+                    "ccn3": "260"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": -49.35,
+                            "lng": 70.2167
+                        },
+                        "name": "Port-aux-Français"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of the French Southern and Antarctic Lands has a blue field. It features the flag of France in the canton and, in the lower fly side, a white TAAF monogram surrounded by five-pointed white stars representing the Southern Cross.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/tf.svg"
+                },
+                "continents": [
+                    "Antarctica"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724019
+                },
+                "region": "Antarctic",
+                "subregion": "",
+                "area": {
+                    "kilometers": 7747
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Gabon"
+                },
+                "codes": {
+                    "alpha_3": "GAB",
+                    "ccn3": "266"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 0.38,
+                            "lng": 9.45
+                        },
+                        "name": "Libreville"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Gabon is composed of three equal horizontal bands of green, yellow and blue.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/ga.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557518
+                },
+                "region": "Africa",
+                "subregion": "Middle Africa",
+                "population": 2593130,
+                "area": {
+                    "kilometers": 267668
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Gambia"
+                },
+                "codes": {
+                    "alpha_3": "GMB",
+                    "ccn3": "270"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 13.45,
+                            "lng": -16.57
+                        },
+                        "name": "Banjul"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Gambia is composed of three equal horizontal bands of red, blue with white top and bottom edges, and green.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/gm.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557518
+                },
+                "region": "Africa",
+                "subregion": "Western Africa",
+                "population": 2822093,
+                "area": {
+                    "kilometers": 10689
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Georgia"
+                },
+                "codes": {
+                    "alpha_3": "GEO",
+                    "ccn3": "268"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 41.68,
+                            "lng": 44.83
+                        },
+                        "name": "Tbilisi"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Georgia has a white field with a large centered red cross that extends to the edges and divides the field into four quarters. A small red Bolnur-Katskhuri cross is centered in each quarter.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/ge.svg"
+                },
+                "continents": [
+                    "Asia"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557518
+                },
+                "region": "Asia",
+                "subregion": "Western Asia",
+                "population": 3935766,
+                "area": {
+                    "kilometers": 69700
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Germany"
+                },
+                "codes": {
+                    "alpha_3": "DEU",
+                    "ccn3": "276"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 52.52,
+                            "lng": 13.4
+                        },
+                        "name": "Berlin"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Germany is composed of three equal horizontal bands of black, red and gold.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/de.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1790233840
+                },
+                "region": "Europe",
+                "subregion": "Western Europe",
+                "population": 83491249,
+                "area": {
+                    "kilometers": 357114
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Ghana"
+                },
+                "codes": {
+                    "alpha_3": "GHA",
+                    "ccn3": "288"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 5.55,
+                            "lng": -0.22
+                        },
+                        "name": "Accra"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Ghana is composed of three equal horizontal bands of red, gold and green, with a five-pointed black star centered in the gold band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/gh.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557518
+                },
+                "region": "Africa",
+                "subregion": "Western Africa",
+                "population": 35064272,
+                "area": {
+                    "kilometers": 238533
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Gibraltar"
+                },
+                "codes": {
+                    "alpha_3": "GIB",
+                    "ccn3": "292"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 36.13,
+                            "lng": -5.35
+                        },
+                        "name": "Gibraltar"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Gibraltar is composed of two horizontal bands of white and red, with the white band twice the height of the red band. A red three-towered castle, from the gate of which hangs a gold key, is centered on the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/gi.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1791073765
+                },
+                "region": "Europe",
+                "subregion": "Southern Europe",
+                "population": 40126,
+                "area": {
+                    "kilometers": 6
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Greece"
+                },
+                "codes": {
+                    "alpha_3": "GRC",
+                    "ccn3": "300"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 37.98,
+                            "lng": 23.73
+                        },
+                        "name": "Athens"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Greece is composed of nine equal horizontal bands of blue alternating with white. A blue square bearing a white cross is superimposed in the canton.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/gr.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1790063323
+                },
+                "region": "Europe",
+                "subregion": "Southern Europe",
+                "population": 10413962,
+                "area": {
+                    "kilometers": 131990
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Greenland"
+                },
+                "codes": {
+                    "alpha_3": "GRL",
+                    "ccn3": "304"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 64.18,
+                            "lng": -51.75
+                        },
+                        "name": "Nuuk"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Greenland is composed of two equal horizontal bands of white and red. A large circle, its upper half red and its lower half white, is superimposed on the boundary between the two bands and offset towards the hoist side.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/gl.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724018
+                },
+                "region": "Americas",
+                "subregion": "North America",
+                "population": 56831,
+                "area": {
+                    "kilometers": 2166086
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Grenada"
+                },
+                "codes": {
+                    "alpha_3": "GRD",
+                    "ccn3": "308"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 12.0529,
+                            "lng": -61.7523
+                        },
+                        "name": "St. George's"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Grenada features a large central rectangular area surrounded by a red border, with three five-pointed yellow stars centered on the top and bottom borders. The central rectangle is divided diagonally into four alternating triangular areas of yellow at the top and bottom and green on the hoist and fly sides, and a five-pointed yellow star on a red circle is superimposed at its center. A symbolic nutmeg pod is situated on the green hoist-side triangle.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/gd.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788795811
+                },
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 117303,
+                "area": {
+                    "kilometers": 344
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Guadeloupe"
+                },
+                "codes": {
+                    "alpha_3": "GLP",
+                    "ccn3": "312"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 16.03,
+                            "lng": -61.73
+                        },
+                        "name": "Basse-Terre"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Guadeloupe has a black field bearing a golden-yellow sun and a green stalk of sugarcane, beneath a blue horizontal band charged with three golden-yellow fleurs-de-lis that spans the top of the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/gp.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724018
+                },
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "area": {
+                    "kilometers": 1628
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Guam"
+                },
+                "codes": {
+                    "alpha_3": "GUM",
+                    "ccn3": "316"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 13.48,
+                            "lng": 144.75
+                        },
+                        "name": "Hagåtña"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Guam has a dark blue field with a narrow red border. At the center of the field is the seal of Guam, a pointed oval depicting a coconut palm beside a proa on a beach and inscribed 'GUAM' in red.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/gu.svg"
+                },
+                "continents": [
+                    "Oceania"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724018
+                },
+                "region": "Oceania",
+                "subregion": "Micronesia",
+                "population": 168999,
+                "area": {
+                    "kilometers": 549
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Guatemala"
+                },
+                "codes": {
+                    "alpha_3": "GTM",
+                    "ccn3": "320"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 14.62,
+                            "lng": -90.52
+                        },
+                        "name": "Guatemala City"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Guatemala is composed of three equal vertical bands of light blue, white and light blue, with the national coat of arms centered in the white band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/gt.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1789141655
+                },
+                "region": "Americas",
+                "subregion": "Central America",
+                "population": 18687881,
+                "area": {
+                    "kilometers": 108889
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Guernsey"
+                },
+                "codes": {
+                    "alpha_3": "GGY",
+                    "ccn3": "831"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 49.45,
+                            "lng": -2.54
+                        },
+                        "name": "St. Peter Port"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Guernsey has a white field with a large red cross that extends to the edges of the field. A narrower gold cross is superimposed at the center of the red cross.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/gg.svg"
+                },
+                "continents": [
+                    "Europe"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1789393059
+                },
+                "region": "Europe",
+                "subregion": "Northern Europe",
+                "area": {
+                    "kilometers": 78
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Guinea"
+                },
+                "codes": {
+                    "alpha_3": "GIN",
+                    "ccn3": "324"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 9.6412,
+                            "lng": -13.5784
+                        },
+                        "name": "Conakry"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Guinea is composed of three equal vertical bands of red, yellow and green.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/gn.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557518
+                },
+                "region": "Africa",
+                "subregion": "Western Africa",
+                "population": 15099727,
+                "area": {
+                    "kilometers": 245857
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Guinea-Bissau"
+                },
+                "codes": {
+                    "alpha_3": "GNB",
+                    "ccn3": "624"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 11.85,
+                            "lng": -15.58
+                        },
+                        "name": "Bissau"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Guinea-Bissau features a red vertical band on its hoist side that takes up about two-fifth the width of the field, and two equal horizontal bands of yellow and green adjoining the vertical band. A five-pointed black star is centered in the vertical band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/gw.svg"
+                },
+                "continents": [
+                    "Africa"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557518
+                },
+                "region": "Africa",
+                "subregion": "Western Africa",
+                "population": 2249515,
+                "area": {
+                    "kilometers": 36125
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Guyana"
+                },
+                "codes": {
+                    "alpha_3": "GUY",
+                    "ccn3": "328"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 6.8,
+                            "lng": -58.15
+                        },
+                        "name": "Georgetown"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Guyana has a green field with two isosceles triangles which share a common base on the hoist end. The smaller black-edged red triangle spanning half the width of the field is superimposed on the larger white-edged yellow triangle which spans the full width of the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/gy.svg"
+                },
+                "continents": [
+                    "South America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557518
+                },
+                "region": "Americas",
+                "subregion": "South America",
+                "population": 835986,
+                "area": {
+                    "kilometers": 214969
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Haiti"
+                },
+                "codes": {
+                    "alpha_3": "HTI",
+                    "ccn3": "332"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 18.53,
+                            "lng": -72.33
+                        },
+                        "name": "Port-au-Prince"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Haiti is composed of two equal horizontal bands of blue and red. A white square bearing the national coat of arms is superimposed at the center of the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/ht.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557518
+                },
+                "region": "Americas",
+                "subregion": "Caribbean",
+                "population": 11906095,
+                "area": {
+                    "kilometers": 27750
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Heard Island and McDonald Islands"
+                },
+                "codes": {
+                    "alpha_3": "HMD",
+                    "ccn3": "334"
+                },
+                "capitals": [],
+                "flag": {
+                    "description": "The flag of Australia has a dark blue field. It features the flag of the United Kingdom — the Union Jack — in the canton, beneath which is a large white seven-pointed star. A representation of the Southern Cross constellation, made up of one small five-pointed and four larger seven-pointed white stars, is situated on the fly side of the field.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/hm.svg"
+                },
+                "continents": [
+                    "Antarctica"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724018
+                },
+                "region": "Antarctic",
+                "subregion": "",
+                "area": {
+                    "kilometers": 412
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Honduras"
+                },
+                "codes": {
+                    "alpha_3": "HND",
+                    "ccn3": "340"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 14.1,
+                            "lng": -87.22
+                        },
+                        "name": "Tegucigalpa"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Honduras is composed of three equal horizontal bands of turquoise, white and turquoise, with five small five-pointed turquoise stars arranged in a quincuncial pattern at the center of the white band.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/hn.svg"
+                },
+                "continents": [
+                    "North America"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788557518
+                },
+                "region": "Americas",
+                "subregion": "Central America",
+                "population": 11005850,
+                "area": {
+                    "kilometers": 112492
+                },
+                "classification": {
+                    "un_member": true
+                },
+                "landlocked": false
+            },
+            {
+                "names": {
+                    "common": "Hong Kong"
+                },
+                "codes": {
+                    "alpha_3": "HKG",
+                    "ccn3": "344"
+                },
+                "capitals": [
+                    {
+                        "attributes": {
+                            "administrative": false,
+                            "constitutional": false,
+                            "executive": false,
+                            "judicial": false,
+                            "legislative": false,
+                            "primary": true
+                        },
+                        "coordinates": {
+                            "lat": 22.267,
+                            "lng": 114.188
+                        },
+                        "name": "City of Victoria"
+                    }
+                ],
+                "flag": {
+                    "description": "The flag of Hong Kong has a red field, at the center of which is a stylized white Bauhinia flower of five petals, each petal bearing a small five-pointed red star.",
+                    "url_svg": "https://flags.restcountries.com/v5/svg/hk.svg"
+                },
+                "continents": [
+                    "Asia"
+                ],
+                "_meta": {
+                    "lastUpdatedTimestamp": 1788724018
+                },
+                "region": "Asia",
+                "subregion": "Eastern Asia",
+                "population": 7498900,
+                "area": {
+                    "kilometers": 1104
+                },
+                "classification": {
+                    "un_member": false
+                },
+                "landlocked": false
+            }
+        ],
+        "meta": {
+            "total": 254,
+            "count": 100,
+            "limit": 100,
+            "offset": 0,
+            "more": true,
+            "request_id": "e2296415-f778-4925-bd05-a045f1c67ff7",
+            "duration": 28
+        }
+    }
+}

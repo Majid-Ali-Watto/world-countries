@@ -1,154 +1,133 @@
-import { useEffect, useState, useMemo, useCallback, memo } from "react";
-import axios from "axios";
-
-import { useNavigate } from "react-router-dom";
-import PropTypes from "prop-types";
-// import { formatPopulation } from "./utils/format-population";
+import { useEffect, useMemo, useState } from "react";
+import { useLocation, useSearchParams } from "react-router-dom";
 import { Loader } from "circle-loader";
-// Move this outside of the App component
-const cache = { countries: [], state: "" };
+import { describeError, getCountries } from "./api/restcountries";
+import CountryFilters from "./components/Country-Filters";
+import CountryList from "./components/Country-List";
+import { countActiveFilters, DEFAULT_SORT, EMPTY_FILTERS, filterCountries, getFilterOptions, SORTS, sortCountries } from "./utils/country-filters";
 
-const App = memo(() => {
+const VIEWS = [
+	{ value: "cards", label: "Cards" },
+	{ value: "list", label: "List" }
+];
+
+function App() {
 	const [countries, setCountries] = useState([]);
-	const [searchQuery, setSearchQuery] = useState("");
-	const navigate = useNavigate();
-	// Memoize sorting function
-	const sortByName = useCallback((a, b) => {
-		return a.name.common.toLowerCase().localeCompare(b.name.common.toLowerCase());
+	const [loading, setLoading] = useState(true);
+	const [error, setError] = useState();
+	const { hash } = useLocation();
+	// Filters, sort and view live in the URL so they survive opening a country and coming back, and can be shared.
+	const [params, setParams] = useSearchParams();
+
+	const filters = useMemo(() => Object.fromEntries(Object.keys(EMPTY_FILTERS).map((key) => [key, params.get(key) ?? ""])), [params]);
+	const sort = SORTS[params.get("sort")] ? params.get("sort") : DEFAULT_SORT;
+	const view = params.get("view") === "list" ? "list" : "cards";
+
+	function updateParams(changes) {
+		setParams(
+			(previous) => {
+				const next = new URLSearchParams(previous);
+				for (const [key, value] of Object.entries(changes)) {
+					if (value) next.set(key, value);
+					else next.delete(key);
+				}
+				return next;
+			},
+			{ replace: true }
+		);
+	}
+
+	useEffect(() => {
+		getCountries()
+			.then(setCountries)
+			.catch((err) => setError(describeError(err, "Could not load countries. Please check your connection and refresh the page.")))
+			.finally(() => setLoading(false));
 	}, []);
 
 	useEffect(() => {
-		sessionStorage.clear();
-
-		async function fetchCountriesData() {
-			if (cache.countries.length > 0) {
-				setCountries(cache.countries);
-				return;
-			}
-			try {
-				console.log("Fetching countries");
-				const response = await axios.get("/all?fields=name,capital,continents,flags,ccn3");
-				const sortedCountries = response.data.sort(sortByName);
-				cache.countries = sortedCountries; // Store the reference to avoid mutation
-				setCountries(sortedCountries);
-			} catch (error) {
-				console.error(error);
-			}
+		if (loading) {
+			Loader.start();
+			return;
 		}
+		Loader.close();
+		// Coming back from a country page: scroll to the card that was opened.
+		const card = hash && document.getElementById(hash.slice(1));
+		if (card) card.scrollIntoView({ block: "nearest" });
+		else window.scrollTo(0, 0);
+	}, [loading, hash]);
 
-		fetchCountriesData()
-			.then(() => {
-				setTimeout(() => {
-					if (cache.state) {
-						const element = document.getElementById(cache.state);
-						if (element) {
-							element.scrollIntoView({ behavior: "instant", block: "nearest" });
-						}
-					} else {
-						window.scrollTo(0, 0);
-					}
-				}, 0);
-			})
-			.finally(() => {
-				Loader.close();
-			});
-	}, [sortByName]);
-
-	// Memoize filtered countries
-	const filteredCountries = useMemo(() => {
-		const query = searchQuery.toLowerCase();
-		console.log(query);
-		return countries.filter((country) => {
-			return country.name.common.toLowerCase().includes(query) || country.continents.some((continent) => continent.toLowerCase().includes(query));
-		});
-	}, [countries, searchQuery]);
-
-	const gotoCountryPage = (country) => {
-		cache.state = country.ccn3;
-		navigate("/country", { state: { country: country.ccn3 } });
-	};
+	const options = useMemo(() => getFilterOptions(countries, filters), [countries, filters]);
+	const visibleCountries = useMemo(() => sortCountries(filterCountries(countries, filters), sort), [countries, filters, sort]);
+	const activeCount = countActiveFilters(filters);
 
 	return (
 		<>
-			<section>
+			<header className="app-header">
 				<abbr title="Explore Countries, States, Cities, and Population Insights">
 					<h2 id="header-title">World Atlas</h2>
 				</abbr>
 				<div className="search-container">
 					<input
-						tabIndex={1}
 						type="search"
-						placeholder="Search for a country..."
-						value={searchQuery}
-						onChange={(e) => setSearchQuery(e.target.value)}
+						aria-label="Search countries"
+						placeholder="Search by country, capital or region..."
+						value={filters.q}
+						onChange={(e) => updateParams({ q: e.target.value })}
 						className="search-bar"
 					/>
 				</div>
-			</section>
-			<div className="card-container">
-				{filteredCountries.length > 0 ? (
-					filteredCountries.map((country, index) => (
-						<div
-							tabIndex={index + 2}
-							id={country.ccn3}
-							key={country.name.common}
-							className="card">
-							<div>
-								<h2 id="country-name">
-									{index + 1}. {country.name.common}
-								</h2>
-							</div>
-
-							<img
-								src={country.flags.svg}
-								alt={country.flags.alt}
-								className="flag"
-								loading="lazy"
-							/>
-							<p>
-								<strong>Capital:</strong> {country.capital?.join(", ") || "N/A"}
-							</p>
-							<p>
-								<strong>Continents:</strong> {country.continents?.join(", ")}
-							</p>
-							{/* <p>
-								<strong>Population:</strong> {formatPopulation(country.population)}
-							</p> */}
-							<p>
-								<a onClick={() => gotoCountryPage(country)}>View All Data</a>
-							</p>
-						</div>
-					))
-				) : searchQuery ? (
-					<p>No data found</p>
-				) : (
-					Loader.start()
+			</header>
+			<main className="listing">
+				{error && (
+					<p
+						className="alert"
+						role="alert">
+						{error}
+					</p>
 				)}
-			</div>
+				{!loading && !error && (
+					<>
+						<CountryFilters
+							filters={filters}
+							sort={sort}
+							options={options}
+							activeCount={activeCount}
+							onChange={updateParams}
+							onReset={() => updateParams({ ...EMPTY_FILTERS, sort: "" })}
+						/>
+						<div className="results-bar">
+							<p
+								aria-live="polite"
+								className="result-count">
+								Showing {visibleCountries.length} of {countries.length} countries
+							</p>
+							<div
+								className="view-toggle"
+								role="group"
+								aria-label="View">
+								{VIEWS.map(({ value, label }) => (
+									<button
+										key={value}
+										aria-pressed={view === value}
+										onClick={() => updateParams({ view: value === "cards" ? "" : value })}>
+										{label}
+									</button>
+								))}
+							</div>
+						</div>
+						{visibleCountries.length > 0 ? (
+							<CountryList
+								countries={visibleCountries}
+								view={view}
+							/>
+						) : (
+							<p className="empty">No countries match your search and filters.</p>
+						)}
+					</>
+				)}
+			</main>
 		</>
 	);
-});
-
-App.displayName = "App";
-
-App.propTypes = {
-	cache: PropTypes.shape({
-		countries: PropTypes.arrayOf(
-			PropTypes.shape({
-				name: PropTypes.shape({
-					common: PropTypes.string.isRequired
-				}).isRequired,
-				capital: PropTypes.arrayOf(PropTypes.string),
-				continents: PropTypes.arrayOf(PropTypes.string),
-				flags: PropTypes.shape({
-					svg: PropTypes.string.isRequired,
-					alt: PropTypes.string
-				}).isRequired,
-				population: PropTypes.number
-			})
-		),
-		state: PropTypes.string
-	}).isRequired
-};
+}
 
 export default App;
