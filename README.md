@@ -38,3 +38,13 @@ is not part of the production build. To use the real API locally, run `npm run b
 The REST Countries key (used by production builds) must have this app's hostname (for local development, `localhost`) in its
 **CORS allowed origins** (https://restcountries.com/api-keys); the demo key is rejected from browsers.
 The key is bundled into the client, so rely on the origin allow-list to protect it.
+
+## Deploy to Netlify
+
+The GitHub Actions workflow deploys the production build to Netlify when code is pushed to `master`, or when the workflow is run manually. Add these repository secrets in **Settings → Secrets and variables → Actions**:
+
+- `NETLIFY_AUTH_TOKEN`: a Netlify personal access token.
+- `NETLIFY_SITE_ID`: the site ID from the Netlify site settings.
+- `VITE_RESTCOUNTRIES_API_KEY`: the REST Countries API key, configured to allow `worldcountrieslist.netlify.app` as an origin.
+
+The Netlify site should use `dist` as its publish directory. The `public/_redirects` file enables direct navigation to client-side routes.
