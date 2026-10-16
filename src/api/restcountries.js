@@ -2,8 +2,8 @@ import axios from "axios";
 
 // v3.1 is retired; v5 needs an API key (https://restcountries.com/sign-up) whose allowed origins
 // include the hostname this app is served from (the demo key is rejected from browsers).
-console.log(`Bearer ${import.meta.env.VITE_RESTCOUNTRIES_API_KEY}`)
-const client = axios.create({
+const key = import.meta.env.VITE_RESTCOUNTRIES_API_KEY;
+console.log({ present: Boolean(key), looksMasked: /^\*+/.test(key ?? ""), length: key?.length });const client = axios.create({
 	baseURL: "https://api.restcountries.com/countries/v5",
 	timeout: 30000,
 	headers: { Authorization: `Bearer ${import.meta.env.VITE_RESTCOUNTRIES_API_KEY}` }
