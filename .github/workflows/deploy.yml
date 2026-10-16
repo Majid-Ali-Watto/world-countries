@@ -29,7 +29,12 @@ jobs:
         run: npm ci
 
       - name: Build site
-        run: npm run build
+        run: |
+          if [ -z "$VITE_RESTCOUNTRIES_API_KEY" ]; then
+            echo "::error::VITE_RESTCOUNTRIES_API_KEY is unavailable to this workflow. Add it as a repository secret or attach the correct GitHub Environment."
+            exit 1
+          fi
+          npm run build
         env:
           VITE_RESTCOUNTRIES_API_KEY: ${{ secrets.VITE_RESTCOUNTRIES_API_KEY }}
 

@@ -87,7 +87,11 @@ export function getCountries() {
 
 export function describeError(error, fallback) {
 	const status = error.response?.status;
-	return status === 401 || status === 403 ? "The countries API rejected the request. Check VITE_RESTCOUNTRIES_API_KEY and that this site's origin is allowed for the key." : fallback;
+	if (status === 401 || status === 403) {
+		const details = error.response?.data?.errors?.map(({ message }) => message).filter(Boolean).join(" ");
+		return `The countries API rejected the request (${status}). ${details || "Check that the API key is active and this site's origin is allowed for it."}`;
+	}
+	return fallback;
 }
 
 async function fetchByCcn3(ccn3, signal) {
