@@ -28,6 +28,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Validate REST Countries API key
+        env:
+          VITE_RESTCOUNTRIES_API_KEY: ${{ secrets.VITE_RESTCOUNTRIES_API_KEY }}
+        run: |
+          response="$(curl --silent --show-error --write-out $'\n%{http_code}' \
+            --header "Authorization: Bearer $VITE_RESTCOUNTRIES_API_KEY" \
+            "https://api.restcountries.com/countries/v5?limit=1")"
+          status="${response##*$'\n'}"
+          if [ "$status" != "200" ]; then
+            body="${response%$'\n'*}"
+            echo "::error::REST Countries rejected VITE_RESTCOUNTRIES_API_KEY (HTTP $status): $body"
+            exit 1
+          fi
+
       - name: Build site
         run: |
           if [ -z "$VITE_RESTCOUNTRIES_API_KEY" ]; then
