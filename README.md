@@ -45,6 +45,6 @@ The GitHub Actions workflow deploys the production build to Netlify when code is
 
 - `NETLIFY_AUTH_TOKEN`: a Netlify personal access token.
 - `NETLIFY_SITE_ID`: the site ID from the Netlify site settings.
-- `VITE_RESTCOUNTRIES_API_KEY`: the REST Countries API key, configured to allow `worldcountrieslist.netlify.app` as an origin.
+- `RESTCOUNTRIES_API_KEY`: the REST Countries API key, configured to allow `worldcountrieslist.netlify.app` as an origin. The workflow exposes it to Vite as `VITE_RESTCOUNTRIES_API_KEY` during the build.
 
 The Netlify site should use `dist` as its publish directory. The `public/_redirects` file enables direct navigation to client-side routes.

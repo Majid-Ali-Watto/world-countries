@@ -30,7 +30,7 @@ jobs:
 
       - name: Validate REST Countries API key
         env:
-          VITE_RESTCOUNTRIES_API_KEY: ${{ secrets.VITE_RESTCOUNTRIES_API_KEY }}
+          VITE_RESTCOUNTRIES_API_KEY: ${{ secrets.RESTCOUNTRIES_API_KEY }}
         run: |
           response="$(curl --silent --show-error --write-out $'\n%{http_code}' \
             --header "Authorization: Bearer $VITE_RESTCOUNTRIES_API_KEY" \
@@ -50,7 +50,7 @@ jobs:
           fi
           npm run build
         env:
-          VITE_RESTCOUNTRIES_API_KEY: ${{ secrets.VITE_RESTCOUNTRIES_API_KEY }}
+          VITE_RESTCOUNTRIES_API_KEY: ${{ secrets.RESTCOUNTRIES_API_KEY }}
 
       - name: Deploy to Netlify
         run: npx --yes netlify-cli deploy --dir=dist --prod --site="$NETLIFY_SITE_ID" --auth="$NETLIFY_AUTH_TOKEN"
